@@ -1,72 +1,35 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
+import { Link } from "gatsby"
 import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 
-const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
+const Home = ({ location }) => (
+  <Layout location={location} title="Emerson Pereira">
+    <p>
+      Hi there,
+      <br />
+      I'm Emerson Pereira and I'm a Web Developer.
+    </p>
 
-  return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
-      <Bio />
-      {posts.map(({ node }) => {
-        const title = node.frontmatter.title || node.fields.slug
-        return (
-          <article key={node.fields.slug}>
-            <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
-        )
-      })}
-    </Layout>
-  )
-}
+    <h4>🙂 About Me</h4>
+    <p>
+      I work with web development since 2016, and I'm passionate about the web
+      and the technologies around it.
+    </p>
+    <Link to="/about">More about me</Link>
 
-export default BlogIndex
+    <h4>📝 Articles</h4>
+    <p>
+      I, sometimes, write about web development topics (mainly in portuguese).
+      To checkout my articles, go to the.
+    </p>
+    <Link to="/blog">See my articles</Link>
 
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-            description
-          }
-        }
-      }
-    }
-  }
-`
+    <h4>📫 How to reach me</h4>
+    <p>
+      To contact me, please write to{" "}
+      <a href="mailto:emerson@emersonpereira.me">emerson@emersonpereira.me</a>.
+    </p>
+  </Layout>
+)
+
+export default Home
