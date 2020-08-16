@@ -1,4 +1,4 @@
-### Hi there 👋
+### Hi there!
 
 I'm Emerson Pereira and I'm a Web Developer.
 
