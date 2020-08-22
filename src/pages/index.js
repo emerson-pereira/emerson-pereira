@@ -10,6 +10,7 @@ const Home = ({ location }) => (
       I'm Emerson Pereira and I'm a Web Developer.
     </p>
 
+    {/* eslint-disable */}
     <h4>🙂 About Me</h4>
     <p>
       I work with web development since 2016, and I'm passionate about the web
