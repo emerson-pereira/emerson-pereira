@@ -2,12 +2,12 @@ import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
 
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 const LayoutContainer = styled.div`
   background: #333;
   color: #f2f2f2;
-  height: 100vh;
+  min-height: 100vh;
   padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
 
   & > div {
