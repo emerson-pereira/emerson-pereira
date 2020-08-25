@@ -11,6 +11,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
 
+  const editURL = `https://github.com/emerson-pereira/emerson-pereira/edit/master/content/blog/${
+    data.markdownRemark.fileAbsolutePath.split("/blog/")[1]
+  }`
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
@@ -38,6 +42,21 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div
+          style={{
+            background: `#4d4d4d`,
+            borderRadius: `10px`,
+            padding: rhythm(1),
+            marginBottom: rhythm(1),
+          }}
+        >
+          <p style={{ margin: 0 }}>
+            Achou algum erro ou quer segestionar uma mudança? <br />
+            <a target="_blank" rel="noreferrer" href={editURL}>
+              Edite no GitHub
+            </a>
+          </p>
+        </div>
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -90,6 +109,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
+      fileAbsolutePath
       html
       frontmatter {
         title

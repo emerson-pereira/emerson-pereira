@@ -13,14 +13,12 @@ Mas antes, se você tá se perguntando o que são actions e mutations, saiba que
 
 > Há algumas vantagens ao se adotar esta abordagem:
 >
-> 1. Você tem um local centralizado para adicionar/modificar seus dados;
-> 1. Está disponível para todos os componentes;
-> 1. Nenhum componente modifica a informação diretamente, garantindo a consistência dos dados;
-> 1. Ferramentas adicionais fazem do desenvolvimento uma experiência melhor.
+> 1\. Você tem um local centralizado para adicionar/modificar seus dados; <br />
+> 2\. Está disponível para todos os componentes; <br />
+> 3\. Nenhum componente modifica a informação diretamente, garantindo a consistência dos dados; <br />
+> 4\. Ferramentas adicionais fazem do desenvolvimento uma experiência melhor.
 >
-> ― Trecho de Artigo sobre Vuex do Vue.js Brazil
-
-[http://vuejs-brasil.com.br/vuex/](Vuex - Vue.js Brasil)
+> ― Trecho de [Artigo sobre Vuex do Vue.js Brazil](http://vuejs-brasil.com.br/vuex/)
 
 Actions e mutations são, os dois, formas de alterar o estado da sua aplicação. A diferença é o momento que cada uma delas é usada e o papel de cada uma.
 
@@ -55,7 +53,8 @@ Alguns dirão que isso é muito boilerplate pra gerenciar mudança de estados, o
 
 O fato é que essa implementação vem funcionando bem desde a implementação do Vuex e isso é bom suficiente pra aplicações de pequeno e grande e porte. Mas isso não significa que o que é bom não pode ficar melhor. O Evan You, criador do Vue.js fala um pouco sobre uma possível **fusão de actions e mutations**.
 
-> We could further simplify the concepts by just getting rid of mutations and merging the two concepts.<br />
+> We could further simplify the concepts by just getting rid of mutations and merging the two concepts.
+>
 > ― [Evan You na VueJS Amsterdam 2019](https://youtu.be/zB3HOejXqwk)
 
 Espero ter te ajudado a entender melhor a diferença entre actions e mutations.

@@ -1,21 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
-import styled from "styled-components"
 
 import { rhythm } from "../utils/typography"
-
-const LayoutContainer = styled.div`
-  background: #333;
-  color: #f2f2f2;
-  min-height: 100vh;
-  padding: ${rhythm(1.5)} ${rhythm(3 / 4)};
-
-  & > div {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: ${rhythm(24)};
-  }
-`
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -61,13 +47,25 @@ const Layout = ({ location, title, children }) => {
     )
   }
   return (
-    <LayoutContainer>
-      <div>
-        <header>{header}</header>
-        <main>{children}</main>
-        <footer></footer>
-      </div>
-    </LayoutContainer>
+    <div
+      style={{
+        marginLeft: `auto`,
+        marginRight: `auto`,
+        maxWidth: rhythm(24),
+        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+      }}
+    >
+      <header>{header}</header>
+      <main>{children}</main>
+      <footer
+        style={{
+          textAlign: `center`,
+          marginTop: rhythm(2.5),
+        }}
+      >
+        <p>Emerson Pereira © {new Date().getFullYear()}</p>
+      </footer>
+    </div>
   )
 }
 

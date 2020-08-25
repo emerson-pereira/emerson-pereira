@@ -56,7 +56,7 @@ const Bio = () => {
           borderRadius: `50%`,
         }}
       />
-      <p>
+      <p style={{ margin: 0 }}>
         <strong>{author.name}</strong> {author.summary}
       </p>
     </div>

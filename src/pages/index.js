@@ -4,32 +4,22 @@ import Layout from "../components/layout"
 
 const Home = ({ location }) => (
   <Layout location={location} title="Emerson Pereira">
-    <p>
-      Hi there,
-      <br />
-      I'm Emerson Pereira and I'm a Web Developer.
-    </p>
-
     {/* eslint-disable */}
-    <h4>🙂 About Me</h4>
     <p>
       I work with web development since 2016, and I'm passionate about the web
       and the technologies around it.
     </p>
-    <Link to="/about">More about me</Link>
 
-    <h4>📝 Articles</h4>
-    <p>
-      I, sometimes, write about web development topics (mainly in portuguese).
-      To checkout my articles, go to the.
-    </p>
-    <Link to="/blog">See my articles</Link>
+    <Link to="/about">
+      <h4>🙂 More about me</h4>
+    </Link>
 
-    <h4>📫 How to reach me</h4>
-    <p>
-      To contact me, please write to{" "}
-      <a href="mailto:emerson@emersonpereira.me">emerson@emersonpereira.me</a>.
-    </p>
+    <Link to="/blog">
+      <h4>📝 Articles</h4>
+    </Link>
+    <a href="mailto:emerson@emersonpereira.me">
+      <h4>📫 emerson@emersonpereira.me</h4>
+    </a>
   </Layout>
 )
 
