@@ -12,10 +12,17 @@ Wordpress2016.overrideThemeStyles = () => ({
   a: {
     color: `#75B5FF`,
   },
+  "ul, ol": {
+    marginLeft: 0,
+  },
+  li: {
+    marginLeft: `30px`,
+  },
   blockquote: {
     color: `inherit`,
     borderLeftColor: `inherit`,
     opacity: `0.8`,
+    fontSize: `1.1rem`,
   },
   pre: {
     border: `1px solid #666`,

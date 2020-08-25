@@ -13,10 +13,10 @@ Mas antes, se você tá se perguntando o que são actions e mutations, saiba que
 
 > Há algumas vantagens ao se adotar esta abordagem:
 >
-> 1\. Você tem um local centralizado para adicionar/modificar seus dados; <br />
-> 2\. Está disponível para todos os componentes; <br />
-> 3\. Nenhum componente modifica a informação diretamente, garantindo a consistência dos dados; <br />
-> 4\. Ferramentas adicionais fazem do desenvolvimento uma experiência melhor.
+> 1. Você tem um local centralizado para adicionar/modificar seus dados; <br />
+> 1. Está disponível para todos os componentes; <br />
+> 1. Nenhum componente modifica a informação diretamente, garantindo a consistência dos dados; <br />
+> 1. Ferramentas adicionais fazem do desenvolvimento uma experiência melhor.
 >
 > ― Trecho de [Artigo sobre Vuex do Vue.js Brazil](http://vuejs-brasil.com.br/vuex/)
 
