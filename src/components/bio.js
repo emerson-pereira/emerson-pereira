@@ -57,7 +57,9 @@ const Bio = () => {
         }}
       />
       <p style={{ margin: 0 }}>
-        <strong>{author.name}</strong> {author.summary}
+        Escrito por <strong>{author.name}</strong>
+        <br />
+        {author.summary}
       </p>
     </div>
   )

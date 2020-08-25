@@ -57,14 +57,6 @@ const Layout = ({ location, title, children }) => {
     >
       <header>{header}</header>
       <main>{children}</main>
-      <footer
-        style={{
-          textAlign: `center`,
-          marginTop: rhythm(2.5),
-        }}
-      >
-        <p>Emerson Pereira © {new Date().getFullYear()}</p>
-      </footer>
     </div>
   )
 }

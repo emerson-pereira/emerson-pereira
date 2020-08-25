@@ -25,12 +25,18 @@ Wordpress2016.overrideThemeStyles = () => ({
     fontSize: `1.1rem`,
   },
   pre: {
-    border: `1px solid #666`,
-    borderRadius: `10px`,
+    border: `1px solid #666666`,
+    borderRadius: `.3em`,
     marginBottom: `1.75rem !important`,
   },
   hr: {
-    background: "#666",
+    background: "#666666",
+  },
+  "td, th": {
+    borderColor: `#666666`,
+  },
+  strong: {
+    fontWeight: 800,
   },
 })
 

@@ -3,7 +3,7 @@ module.exports = {
     title: `Articles`,
     author: {
       name: `Emerson Pereira`,
-      summary: `- Web Developer`,
+      summary: `Web Developer`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
@@ -40,6 +40,12 @@ module.exports = {
             resolve: `gatsby-remark-responsive-iframe`,
             options: {
               wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: {
+              target: "_blank",
             },
           },
           `gatsby-remark-prismjs`,

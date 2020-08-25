@@ -51,7 +51,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           }}
         >
           <p style={{ margin: 0 }}>
-            Achou algum erro ou quer segestionar uma mudança? <br />
+            Achou algum erro ou quer sugestionar uma mudança? <br />
             <a target="_blank" rel="noreferrer" href={editURL}>
               Edite no GitHub
             </a>
