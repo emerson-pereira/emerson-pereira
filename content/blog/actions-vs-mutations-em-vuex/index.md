@@ -1,13 +1,13 @@
 ---
 title: Entenda a diferença entre Actions e Mutations em Vuex
-date: "2019-05-26"
-description: "Eu sempre achei chatbot era de extrema complexidade mas, na verdade, é algo bem simples e divertido de implementar"
+date: 2019-05-26
+description: Aprendendo sobre Vuex e quer saber como usar Actions e Mutations? Entenda a diferença entre os dois.
 ---
 
 Aprendendo sobre Vuex e quer saber como usar Actions e Mutations? A diferença entre os dois?<br />
 Esse é um artigo introdutório pra apresentar como usar os dois e as principais diferenças entre eles.
 
-![Men coding in computer](./cover.png)
+![Men coding in computer](./man-coding.png)
 
 Mas antes, se você tá se perguntando o que são actions e mutations, saiba que: Actions e mutations são conceitos embutidos no Vuex que é uma maneira de gerenciar estado de aplicações em Vue.js (conceitos originalmente da implementação Flux do time do Facebook). Veja abaixo um trecho de um artigo do [Vue.js Brasil](http://vuejs-brasil.com.br/) sobre o assunto. Recomendo a leitura se você não sabe o que é Vuex e se você sabe também. É sempre bom reforçar os conceitos que já sabemos.
 
