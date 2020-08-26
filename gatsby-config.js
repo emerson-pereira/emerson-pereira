@@ -6,7 +6,7 @@ module.exports = {
       summary: `Web Developer`,
     },
     description: `Emerson Pereira personal website and blog.`,
-    siteUrl: `https://emersonpereira.me/`,
+    siteUrl: `https://emersonpereira.me`,
   },
   plugins: [
     {
@@ -63,13 +63,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Emerson Pereira - Web Developer`,
+        short_name: `Emerson Pereira`,
         start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
+        background_color: `#333333`,
+        theme_color: `#75B5FF`,
         display: `minimal-ui`,
-        icon: `content/assets/favicon.png`,
+        icon: `content/assets/icon.png`,
       },
     },
     `gatsby-plugin-react-helmet`,

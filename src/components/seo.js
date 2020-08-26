@@ -11,9 +11,16 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
 const SEO = ({ description, lang, meta, title }) => {
-  const { site } = useStaticQuery(
+  const { site, thumb } = useStaticQuery(
     graphql`
       query {
+        thumb: file(absolutePath: { regex: "/thumb.jpg/" }) {
+          childImageSharp {
+            fixed(width: 1200, height: 630) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
         site {
           siteMetadata {
             title
@@ -21,6 +28,7 @@ const SEO = ({ description, lang, meta, title }) => {
             author {
               summary
             }
+            siteUrl
           }
         }
       }
@@ -28,6 +36,9 @@ const SEO = ({ description, lang, meta, title }) => {
   )
 
   const metaDescription = description || site.siteMetadata.description
+  const defaultTitle = `${site.siteMetadata.title} - ${site.siteMetadata.author.summary}`
+  const ogTitle = title ? `${title} - ${site.siteMetadata.title}` : defaultTitle
+  const ogImage = `${site.siteMetadata.siteUrl}${thumb.childImageSharp.fixed.src}`
 
   return (
     <Helmet
@@ -35,7 +46,7 @@ const SEO = ({ description, lang, meta, title }) => {
         lang,
       }}
       title={title}
-      defaultTitle={`${site.siteMetadata.title} - ${site.siteMetadata.author.summary}`}
+      defaultTitle={defaultTitle}
       titleTemplate={`%s - ${site.siteMetadata.title}`}
       meta={[
         {
@@ -44,7 +55,7 @@ const SEO = ({ description, lang, meta, title }) => {
         },
         {
           property: `og:title`,
-          content: title,
+          content: ogTitle,
         },
         {
           property: `og:description`,
@@ -53,6 +64,34 @@ const SEO = ({ description, lang, meta, title }) => {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl,
+        },
+        {
+          property: `og:image`,
+          content: ogImage,
+        },
+        {
+          name: `twitter:card`,
+          content: `summary`,
+        },
+        {
+          name: `twitter:url`,
+          content: site.siteMetadata.siteUrl,
+        },
+        {
+          name: `twitter:title`,
+          content: ogTitle,
+        },
+        {
+          name: `twitter:description`,
+          content: metaDescription,
+        },
+        {
+          name: `twitter:image`,
+          content: ogImage,
         },
       ].concat(meta)}
     />
