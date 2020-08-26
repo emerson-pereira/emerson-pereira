@@ -22,7 +22,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         lang="pt-BR"
       />
       <p style={{ marginBottom: 40 }}>
-        <Link to="/blog">← All articles</Link>
+        <Link to="/blog">← All posts</Link>
       </p>
       <article>
         <header>

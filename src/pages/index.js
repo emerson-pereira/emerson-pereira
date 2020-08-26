@@ -11,13 +11,42 @@ const Home = ({ location }) => (
       and the technologies around it.
     </p>
 
-    <Link to="/about">
-      <p>About me</p>
-    </Link>
+    <p>
+      <Link to="/about">About me</Link>
+    </p>
+    <p>
+      <Link to="/blog">Blog (in portuguese)</Link>
+    </p>
 
-    <Link to="/blog">
-      <p>Blog (in portuguese)</p>
-    </Link>
+    {/* <p>
+      <Link to="/contact">Contact</Link>
+    </p> */}
+
+    <h4>Reach me</h4>
+
+    <p>
+      <a href="mailto:emerson@emersonpereira.me">Email</a>
+    </p>
+
+    <p>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://github.com/emerson-pereira/"
+      >
+        GitHub
+      </a>
+    </p>
+
+    <p>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.linkedin.com/in/emerson-pereira-dev/"
+      >
+        LinkedIn
+      </a>
+    </p>
   </Layout>
 )
 

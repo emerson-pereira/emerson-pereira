@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 
 import { rhythm } from "../utils/typography"
 
-const Home = ({ location }) => {
+const About = ({ location }) => {
   const data = useStaticQuery(graphql`
     query {
       avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
@@ -56,7 +56,7 @@ const Home = ({ location }) => {
           👋
         </span>
         <br />
-        I'm Emerson pereira.
+        I'm Emerson Pereira.
         <br />
         This is a bit about me. My carreer, skills and some fun facts.
       </p>
@@ -106,40 +106,8 @@ const Home = ({ location }) => {
         <li>My favorite show is The office</li>
         <li>I used to teach English for Kids</li>
       </ul>
-
-      <h4>How to reach me</h4>
-
-      <p>
-        To contact me, please write to{" "}
-        <a href="mailto:emerson@emersonpereira.me">emerson@emersonpereira.me</a>
-        .
-      </p>
-
-      <p>
-        To know more about my carrer and skills,{" "}
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.linkedin.com/in/emerson-pereira-dev/"
-        >
-          connect with me on LinkedIn
-        </a>
-        .
-      </p>
-
-      <p>
-        You can also{" "}
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://github.com/emerson-pereira/"
-        >
-          find me on GitHub
-        </a>{" "}
-        if you want to check what I've been up to, there.
-      </p>
     </Layout>
   )
 }
 
-export default Home
+export default About

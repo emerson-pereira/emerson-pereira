@@ -14,6 +14,11 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }) => ({
   },
   a: {
     color: `#75B5FF`,
+    boxShadow: `none`,
+  },
+  "a:hover": {
+    transition: `1s filter linear`,
+    filter: `brightness(85%)`,
   },
   "ul, ol": {
     marginLeft: 0,
