@@ -5,11 +5,8 @@ module.exports = {
       name: `Emerson Pereira`,
       summary: `Web Developer`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
-    social: {
-      twitter: `kylemathews`,
-    },
+    description: `Emerson Pereira personal website and blog.`,
+    siteUrl: `https://emersonpereira.me/`,
   },
   plugins: [
     {

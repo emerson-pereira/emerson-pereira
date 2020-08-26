@@ -12,30 +12,12 @@ const Home = ({ location }) => (
     </p>
 
     <Link to="/about">
-      <h4>
-        <span role="img" aria-label="Smiley face">
-          🙂
-        </span>{" "}
-        About me
-      </h4>
+      <p>About me</p>
     </Link>
 
     <Link to="/blog">
-      <h4>
-        <span role="img" aria-label="Memo note">
-          📝
-        </span>{" "}
-        Blog (In portuguese)
-      </h4>
+      <p>Blog (in portuguese)</p>
     </Link>
-    <a href="mailto:emerson@emersonpereira.me">
-      <h4>
-        <span role="img" aria-label="Mail box">
-          📫
-        </span>{" "}
-        emerson@emersonpereira.me
-      </h4>
-    </a>
   </Layout>
 )
 

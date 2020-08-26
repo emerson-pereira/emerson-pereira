@@ -22,9 +22,6 @@ const Home = ({ location }) => {
             name
             summary
           }
-          social {
-            twitter
-          }
         }
       }
     }
@@ -33,7 +30,7 @@ const Home = ({ location }) => {
   const { author } = data.site.siteMetadata
   return (
     <Layout location={location} title="About me">
-      <SEO />
+      <SEO title="Emerson Pereira - About me" />
       <p style={{ marginBottom: 40 }}>
         <Link to="/">← Home</Link>
       </p>
@@ -64,12 +61,7 @@ const Home = ({ location }) => {
         This is a bit about me. My carreer, skills and some fun facts.
       </p>
 
-      <h4>
-        <span role="img" aria-label="Suitcase">
-          💼
-        </span>{" "}
-        Carreer
-      </h4>
+      <h4>Carreer</h4>
 
       <p>
         I started at IBM back in 2016 where I first started working with Web
@@ -88,12 +80,7 @@ const Home = ({ location }) => {
         code-review, tests and continuous integration.
       </p>
 
-      <h4>
-        <span role="img" aria-label="Books">
-          📚
-        </span>{" "}
-        Skills
-      </h4>
+      <h4>Skills</h4>
 
       <p>
         I have experience with Node.js and API development (REST and GraphQL),
@@ -111,12 +98,7 @@ const Home = ({ location }) => {
         and other hot tech in the world of JavaScript and web development.
       </p>
 
-      <h4>
-        <span role="img" aria-label="High voltage symbol">
-          ⚡
-        </span>{" "}
-        Fun facts
-      </h4>
+      <h4>Fun facts</h4>
 
       <ul>
         <li>I know how to juggle three balls</li>
@@ -125,12 +107,7 @@ const Home = ({ location }) => {
         <li>I used to teach English for Kids</li>
       </ul>
 
-      <h4>
-        <span role="img" aria-label="Mail box">
-          📫
-        </span>{" "}
-        How to reach me
-      </h4>
+      <h4>How to reach me</h4>
 
       <p>
         To contact me, please write to{" "}

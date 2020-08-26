@@ -1,13 +1,16 @@
 import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 
-Wordpress2016.overrideThemeStyles = () => ({
+Wordpress2016.overrideThemeStyles = ({ rhythm }) => ({
   "a.gatsby-resp-image-link": {
     boxShadow: `none`,
   },
   body: {
     background: `#333333`,
     color: `#F2F2F2`,
+  },
+  "h1, h2, h3": {
+    fontFamily: `${["Merriweather", "Georgia", "serif"].join(",")} !important`,
   },
   a: {
     color: `#75B5FF`,
@@ -27,7 +30,7 @@ Wordpress2016.overrideThemeStyles = () => ({
   pre: {
     border: `1px solid #666666`,
     borderRadius: `.3em`,
-    marginBottom: `1.75rem !important`,
+    marginBottom: `${rhythm(1)} !important`,
   },
   hr: {
     background: "#666666",
