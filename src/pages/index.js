@@ -5,7 +5,7 @@ import SEO from "../components/seo"
 
 const Home = ({ location }) => (
   <Layout location={location} title="Emerson Pereira">
-    <SEO title="Emerson Pereira - Web Developer" />
+    <SEO title="" />
     <p>
       I work with web development since 2016, and I'm passionate about the web
       and the technologies around it.

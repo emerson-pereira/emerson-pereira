@@ -29,8 +29,8 @@ const Home = ({ location }) => {
 
   const { author } = data.site.siteMetadata
   return (
-    <Layout location={location} title="About me">
-      <SEO title="Emerson Pereira - About me" />
+    <Layout location={location} title="About">
+      <SEO title="About" />
       <p style={{ marginBottom: 40 }}>
         <Link to="/">← Home</Link>
       </p>

@@ -7,12 +7,11 @@ import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata.title
   const posts = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title="All posts" />
+    <Layout location={location} title="Blog">
+      <SEO title="Blog" lang="pt-BR" />
       <p style={{ marginBottom: 40 }}>
         <Link to="/">← Home</Link>
       </p>

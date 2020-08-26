@@ -8,7 +8,6 @@ import { rhythm, scale } from "../utils/typography"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
-  const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
 
   const editURL = `https://github.com/emerson-pereira/emerson-pereira/edit/master/content/blog/${
@@ -16,10 +15,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   }`
 
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title="Blog">
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        lang="pt-BR"
       />
       <p style={{ marginBottom: 40 }}>
         <Link to="/blog">← All articles</Link>
