@@ -12,17 +12,13 @@ const Home = ({ location }) => (
     </p>
 
     <p>
-      <Link to="/about">About me</Link>
+      <Link to="/about">About</Link>
     </p>
     <p>
       <Link to="/blog">Blog</Link>
     </p>
 
-    {/* <p>
-      <Link to="/contact">Contact</Link>
-    </p> */}
-
-    <h4>Reach me</h4>
+    <h4>Contact</h4>
 
     <p>
       <a href="mailto:emerson@emersonpereira.me">Email</a>
