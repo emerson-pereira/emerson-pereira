@@ -15,7 +15,7 @@ const Home = ({ location }) => (
       <Link to="/about">About me</Link>
     </p>
     <p>
-      <Link to="/blog">Blog (in portuguese)</Link>
+      <Link to="/blog">Blog</Link>
     </p>
 
     {/* <p>
