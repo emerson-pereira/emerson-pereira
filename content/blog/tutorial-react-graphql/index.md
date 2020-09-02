@@ -29,7 +29,7 @@ Links do projeto:
 
 ## A proposta
 
-A proposta é um website sobre frutas onde podemos gerenciar os dados fazendo as operações **CRUD**. O site será feito em React.js e o servidor será em Node.js. Nesse tutorial desenvolveremos a **API em GraphQL**.
+A proposta é um website sobre frutas onde podemos gerenciar os dados fazendo as operações **CRUD**. O site será feito em React.js e o servidor em Node.js. Nesse tutorial desenvolveremos o **frontend em React.js**.
 
 ## O stack
 
@@ -52,6 +52,7 @@ Quando terminado o processo, uma pasta `frontend` terá sido criada com a aplica
 📦fruits
 ┣ 📂backend
 ┣ 📂frontend
+┃ ┣ …
 ```
 
 Abra um terminal de comandos e navegue para a pasta `fruits/frontend`. Verifique que funcionou executando:
@@ -60,7 +61,7 @@ Abra um terminal de comandos e navegue para a pasta `fruits/frontend`. Verifique
 npm start
 ```
 
-Deverá abrir a tela inicial do gerada com create-react-app na porta 3000:
+Deverá abrir a tela inicial gerada com create-react-app na porta 3000:
 
 [http://localhost:3000](http://localhost:3000/)
 
@@ -155,7 +156,7 @@ li {
 }
 ```
 
-_Caminho_: `frontend/src/App.js`
+_Caminho_: `frontend/src/App.css`
 
 ```css
 .App {
@@ -273,7 +274,7 @@ Agora salve tudo e abra no navegador, certifique que não há erros no console. 
 
 ![tela inicial](tela-inicial.jpg)
 
-Dessa forma concluímos a configuração inicial do projeto, vamos agora ao próximo passo.
+Assim, concluímos a configuração inicial do projeto, vamos agora ao próximo passo.
 
 ## Configurando rotas
 
@@ -312,9 +313,9 @@ export default Routes
 
 A propriedade `path` indica em qual caminho da aplicação aquele componente será exibido, no caso de `Fruits`, este será exibido na home da aplicação.
 
-Agora, vamos criar o componente `Fruits.js` que está sendo chamando no arquivo de rotas. Esse componente mostrará uma lista de frutas assim como as açoes de **exibir**, **editar** e **excluir** cada fruta.
+Agora, vamos criar o componente `Fruits.js` que está sendo chamando no arquivo de rotas. Esse componente mostrará uma lista de frutas assim como as ações de **exibir**, **editar** e **excluir** de cada fruta.
 
-Dentro de `src`, crie uma pasta `components`. Dentro desta crie o componente de frutas:
+Dentro de `src`, crie uma pasta `components`. Dentro desta, crie o componente de frutas:
 
 _Caminho_: `frontend/src/components/Fruits.js`
 
@@ -524,7 +525,7 @@ export default FruitsList
 
 E simples assim, fizemos a query e populamos o componente com dados da API. Ainda fizemos um retorno simples ao usuário com feedback de loading e de erro, caso ocorra algum.
 
-Além disso, de antemão, apontamos rotas para cada ação [CRUD](https://pt.wikipedia.org/wiki/CRUD) relacionada a frutas. Vamos, agora, criar os componentes para cada ação para depois conectar cada rota à seu respectivo componente.
+Além disso, de antemão, apontamos rotas para cada ação [CRUD](https://pt.wikipedia.org/wiki/CRUD) relacionada à frutas. Vamos, agora, criar os componentes para cada ação para depois conectar cada rota à seu respectivo componente.
 
 ## Fazendo CRUD
 
@@ -969,7 +970,7 @@ const DeleteFruit = () => {
 export default DeleteFruit
 ```
 
-Aqui também é manipulado o cache do Apollo client. Depois de removido o item, removemos o mesmo item do cache e atualizamos a relacionamos a query `GET_FRUITS` com os dados atualizados.
+Aqui também é manipulado o cache do Apollo client. Depois de removido o item, removemos o mesmo item do cache e relacionamos a query `GET_FRUITS` com os dados atualizados.
 
 **Crud feito com sucesso!**
 
@@ -1028,7 +1029,13 @@ export default Routes
 
 ## Conclusão
 
-E esse foi o tutorial, espero ter te ajudado!
+E esse foi o tutorial, nesta jornada você aprendeu:
+
+- O que é GraphQL e como utilizá-lo
+- Como montar uma API em GraphQL usando Node.js, Apollo Server e MongoDB
+- Como montar uma aplicação frontend para consumir API GraphQL com React.js e Apollo client.
+
+Espero ter te ajudado!
 
 Links do projeto:
 
