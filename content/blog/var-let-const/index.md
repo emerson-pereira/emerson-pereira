@@ -4,7 +4,7 @@ date: 2020-05-18
 description: As diferenças de cada uma de forma resumida e pontuada.
 ---
 
-![Three balloons](./3-balloons.jpg)
+![three balloons](./3-balloons.jpg)
 
 ## Diferenças
 
@@ -49,7 +49,7 @@ console.log(x) // x is not defined
 Para escopar uma variável usando `var` pode-se usar [IIFE](http://benalman.com/news/2010/11/immediately-invoked-function-expression/) (_Immediately Invoked Function Expression_) já que `var` só pode ser escopada por função:
 
 ```js
-(function () {
+;(function () {
   var x = 1
 })()
 console.log(x) // x is not defined

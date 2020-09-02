@@ -6,7 +6,7 @@ description: Aqui, eu vou passar um pouco de como foi a conferência Web.br 2019
 
 Em outubro de 2019 eu tive o prazer de participar da conferência [Web.br](https://conferenciaweb.w3c.br/) — veja fotos no [Instagram](https://www.instagram.com/nicbr/) — organizada pela ceweb.br, nic.br e cgi.br. Foram dois dias de palestras e aqui eu keynotes e aqui eu vou passar um pouco de como foram essas experiências.
 
-![Person taking notes](./taking-notes.jpg)
+![person taking notes](./taking-notes.jpg)
 
 Assim que cheguei, me credenciei e fui presenteado com uma bela camiseta e alguns outros brindes muito bacanas do pessoas da Web.br. Além disso foi informado que precisava de um fone, mais tarde descobri que todas as palestras daquele dia seria usando um fone pra escutar o apresentador enquanto ele fala no microfone. Confesso que não gostei muito do formato, achei incômodo, mas achei que foi uma solução inteligente pra possibilitar duas palestras acontecerem no mesmo espaço.
 

@@ -6,7 +6,7 @@ description: Eu sempre achei chatbot era de extrema complexidade mas, na verdade
 
 Eu sempre achei que montar um chatbot era de extrema complexidade, eu me deixei tomar pelo medo antecipado e nunca de fato tinha posto a mão na massa e feito um "Hello World" com um chatbot, ou melhor, um "Hello, I'm a chatbot".
 
-![Woman using a phone](./woman-using-phone.jpg)
+![woman using a phone](./woman-using-phone.jpg)
 
 Acontece que montar um chatbot é incrivelmente simples e rápido. E ainda digo mais: Dependendo da aplicação requer 0 código.
 

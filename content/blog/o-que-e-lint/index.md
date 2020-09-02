@@ -14,7 +14,7 @@ Além do conceito da coisa, vou falar também um pouco sobre história do termo,
 
 Qual a definição literal da palavra "lint"? É um verbo? Um substantivo? Adjetivo?
 
-![Flower lint](./flower-lint.jpeg)
+![flower lint](./flower-lint.jpeg)
 
 Eu me deparei com vários diferentes uso da palavra "lint" em programação: Como substantivo, verbo e até mesmo variações como "linter", "linting". Então pra evitar qualquer tipo de confusão, vamos a definição da palavra.
 
@@ -28,7 +28,7 @@ Agora, sabendo a definição literal da palavra, espero que fique mais fácil a 
 
 O termo "lint" surgiu em programação da necessidade de implementar algum tipo de checagem automática pra previnir e/ou solucionar erros enquanto escrevemos códigos.
 
-![Book](./book.jpeg)
+![book](./book.jpeg)
 
 É fácil esquecer de um “;” fazer typo ou até mesmo declarar uma variável e não usá-la depois. Pra previnir erros como esses, surgiu a necessidade de um "programa" que execute checagens como essa, aponte os erros e até mesmo, em alguns casos, concerte de forma automática essas “falhas” na escrita do código.
 
@@ -37,7 +37,7 @@ Assim como os removedores de fiapos performam uma limpeza nos tecidos, Lint perf
 
 ## Conceitos
 
-![Dictionary on phone](./dictionary-on-phone.jpg)
+![dictionary on phone](./dictionary-on-phone.jpg)
 
 Vamos ver algumas definições de diferentes fontes sobre lint.
 
@@ -75,7 +75,7 @@ Isso posto, agora vamos a alguns exemplos de ferramentas e programas de linting.
 
 ## Exemplos
 
-![Tools wall](./tools-wall.jpg)
+![tools wall](./tools-wall.jpg)
 
 ### [JSHint](https://jshint.com/)
 
@@ -111,7 +111,7 @@ Guarde essas listas como referência e espero que implemente lint no seu próxim
 
 ## Implementação
 
-![Person coding](./person-coding.jpg)
+![person coding](./person-coding.jpg)
 
 A implementação de lint em projetos pode ser tão simples como instalar um plugin de lint na loja de plugins do seu editor; implementado no processo de build da sua aplicação como acontece muito com páginas em Vue.JS, React etc, ou direto no seu projeto de uma linguagem específica como Node.JS e PHP.
 
