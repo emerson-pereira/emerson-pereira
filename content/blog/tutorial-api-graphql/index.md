@@ -4,7 +4,7 @@ date: 2020-07-03
 description: Tutorial para desenvolver uma API em GraphQL usando Apollo Server para configurar o servidor e MongoDB como banco de dados. Inclui modelagem de dados com schemas e testes com queries e mutations.
 ---
 
-![Astronaut](astronaut.jpg)
+![astronaut](astronaut.jpg)
 
 Este artigo é um tutorial de como montar um servidor GraphQL e faz parte de uma série de 2 tutoriais para montar uma aplicação em GraphQL.
 
@@ -12,21 +12,20 @@ Se quiser saber o que é GraphQL primeiro, veja o seguinte artigo:
 
 📝 [_GraphQL: O que é e como usar_](/blog/introducao-a-graphql)
 
+Você pode acompanhar o tutorial passo-a-passo ou clonar o repositório completo do GitHub.<br />
+Além disso eu disponibilizei uma versão online (sem mutations para que não haja mudança nos dados online) a título de exemplo do resultado final da API.
+
+Links do projeto:
+
+- **Código no GitHub**: [github.com/emerson-pereira/frutas](https://github.com/emerson-pereira/frutas)
+
+- **Versão online da API**: [graphql-frutas.herokuapp.com](https://graphql-frutas.herokuapp.com/)
+
+- **Versão online App React**: [graphql-frutas.herokuapp.com](https://graphql-frutas.herokuapp.com/)
+
 ## A proposta
 
 A proposta é um website sobre frutas onde podemos gerenciar os dados fazendo as operações **CRUD**. O site será feito em React.js e o servidor será em Node.js. Nesse tutorial desenvolveremos a **API em GraphQL**.
-
-_Em breve publicarei a segunda parte do tutorial onde mostrarei com consumir essa API em **React.js** usando **Apollo client**._
-
-Você pode acompanhar o tutorial passo-a-passo ou clonar o repositório completo do GitHub. Além disso eu disponibilizei uma versão online (sem mutations para que não haja mudança nos dados online) a título de exemplo do resultado final. Links abaixo:
-
-#### Código no GitHub
-
-✨ [github.com/emerson-pereira/fruits](https://github.com/emerson-pereira/fruits/)
-
-#### Versão online da API
-
-🚀 [graphql-frutas.herokuapp.com](https://graphql-frutas.herokuapp.com/)
 
 ## O stack
 
@@ -36,7 +35,7 @@ Para essa aplicação teremos:
 - [Apollo server](https://www.apollographql.com/docs/apollo-server/) para montar o servidor
 - Banco de dados [MongoDB](https://www.mongodb.com/)
 
-### Estrutura inicial
+## Estrutura inicial
 
 Para começar o projeto crie uma pasta chamada `fruits` e dentro dela crie uma pasta `backend`. Então ficamos com a seguinte estrutura de pastas:
 
@@ -382,7 +381,7 @@ Veja a estrutura final de pastas:
  ┃ ┣ 📜package.json
 ```
 
-**Lembrete**: O código final desse projeto está [disponível no GitHub](https://github.com/emerson-pereira/fruits/).
+**Lembrete**: O código final desse projeto está [disponível no GitHub](https://https://github.com/emerson-pereira/frutas/).
 
 Agora podemos testar nossas queries e mutations. O framework Apollo Server oferece um [Playground](https://www.apollographql.com/docs/apollo-server/testing/graphql-playground/) onde podemos performar tais testes.
 
@@ -410,7 +409,7 @@ npm start
 
 Abrirá uma janela no browser com o playground:
 
-![GraphQL Playground](./graphql-playground.png)
+![graphQL Playground](./graphql-playground.png)
 
 **_Bem vindo a linguagem de query em gráfico!_**
 
@@ -431,7 +430,10 @@ Como ainda não existe nenhum dado no banco podemos começar testando a **mutati
 ```graphql
 mutation createFruit {
   createFruit(
-    fruit: { name: "Maçã", nutritions: { sugar: "2.3", calories: "52" } }
+    fruit: {
+      name: "Maçã"
+      nutritions: { sugar: "2.3", calories: "52" }
+    }
   ) {
     name
     nutritions {
@@ -467,16 +469,16 @@ A título de exemplo, eu publiquei uma [versão online dessa API](https://graphq
 
 Temos uma **API em GraphQL** totalmente funcional, com **operações CRUD**, conectada a um **banco de dados** e pronta para ser consumida por clientes.
 
-#### Código no GitHub
+Links do projeto:
 
-✨ [github.com/emerson-pereira/fruits](https://github.com/emerson-pereira/fruits/)
+- **Código no GitHub**: [github.com/emerson-pereira/frutas](https://github.com/emerson-pereira/frutas)
 
-#### Versão online da API
+- **Versão online da API**: [graphql-frutas.herokuapp.com](https://graphql-frutas.herokuapp.com/)
 
-🚀 [graphql-frutas.herokuapp.com](https://graphql-frutas.herokuapp.com/)
+- **Versão online App React**: [graphql-frutas.herokuapp.com](https://graphql-frutas.herokuapp.com/)
 
 ## Próximo passo
 
-Agora podemos usar clientes para fazer chamadas para essa API.
+Agora podemos usar clientes para fazer chamadas para essa API. Veja o tutorial de como implementar uma App React.js com Apollo Client para conectar a essa API:
 
-_Em breve publicarei a segunda parte do tutorial onde mostrarei com consumir essa API em **React.js** usando **Apollo client**._
+📝 [_Consumindo API GraphQL em React.js com Apollo client_](/blog/tutorial-react-graphql/)
