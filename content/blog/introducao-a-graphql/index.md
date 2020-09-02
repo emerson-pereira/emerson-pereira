@@ -162,10 +162,8 @@ Para essa aplicação teremos a seguite estrutura:
 
 ### Tutoriais
 
-Aqui estão os tutoriais espero que goste!
+Aqui estão os tutoriais de como montar API e frontend para consumir API:
 
-Tutorial 1: <br />
-[_Montando API GraphQL em Node.js com Apollo e MongoDB_](/blog/tutorial-api-graphql)
+📝 [_Montando API GraphQL em Node.js com Apollo e MongoDB_](/blog/tutorial-api-graphql)
 
-Tutorial 2: <br />
-_Em breve publicarei a segunda parte do tutorial onde mostrarei como consumir essa API em **React.js** usando **Apollo client**._
+📝 [_Consumindo API GraphQL em React.js com Apollo client_](/blog/tutorial-react-graphql)
