@@ -2,11 +2,12 @@
 title: Como fazer um chatbot em poucos minutos
 date: 2019-05-18
 description: Eu sempre achei chatbot era de extrema complexidade mas, na verdade, é algo bem simples e divertido de implementar.
+ogimage: "woman-using-phone.jpg"
 ---
 
 Eu sempre achei que montar um chatbot era de extrema complexidade, eu me deixei tomar pelo medo antecipado e nunca de fato tinha posto a mão na massa e feito um "Hello World" com um chatbot, ou melhor, um "Hello, I'm a chatbot".
 
-![woman using a phone](./woman-using-phone.jpg)
+![woman using a phone](woman-using-phone.jpg)
 
 Acontece que montar um chatbot é incrivelmente simples e rápido. E ainda digo mais: Dependendo da aplicação requer 0 código.
 

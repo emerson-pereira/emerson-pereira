@@ -2,6 +2,7 @@
 title: Montando API GraphQL em Node.js com Apollo e MongoDB
 date: 2020-07-03
 description: Tutorial para desenvolver uma API em GraphQL usando Apollo Server para configurar o servidor e MongoDB como banco de dados. Inclui modelagem de dados com schemas e testes com queries e mutations.
+ogimage: "astronaut.jpg"
 ---
 
 ![astronaut](astronaut.jpg)
@@ -409,7 +410,7 @@ npm start
 
 Abrirá uma janela no browser com o playground:
 
-![graphQL Playground](./graphql-playground.png)
+![graphQL Playground](graphql-playground.png)
 
 **_Bem vindo a linguagem de query em gráfico!_**
 

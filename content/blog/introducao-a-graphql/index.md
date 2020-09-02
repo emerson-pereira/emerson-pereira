@@ -2,9 +2,10 @@
 title: "GraphQL: O que é e como usar"
 date: 2020-07-02
 description: Introdução à GraphQL, o que significa e como implementar usando Apollo em um projeto real com React.js, Node.js e Banco de Dados MongoDB.
+ogimage: "its-simple.jpg"
 ---
 
-![it's simple](./its-simple.jpg)
+![it's simple](its-simple.jpg)
 
 > Descreva seus dados <br />
 > Peça o que quiser <br />

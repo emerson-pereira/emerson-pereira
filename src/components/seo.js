@@ -9,18 +9,12 @@ import React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
+import defaultOpenGraphImage from "../../content/assets/thumb.jpg"
 
-const SEO = ({ description, lang, meta, title }) => {
-  const { site, thumb } = useStaticQuery(
+const SEO = ({ description, lang, meta, title, image }) => {
+  const { site } = useStaticQuery(
     graphql`
       query {
-        thumb: file(absolutePath: { regex: "/thumb.jpg/" }) {
-          childImageSharp {
-            fixed(width: 1200, height: 630) {
-              ...GatsbyImageSharpFixed
-            }
-          }
-        }
         site {
           siteMetadata {
             title
@@ -38,7 +32,7 @@ const SEO = ({ description, lang, meta, title }) => {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = `${site.siteMetadata.title} - ${site.siteMetadata.author.summary}`
   const ogTitle = title ? `${title} - ${site.siteMetadata.title}` : defaultTitle
-  const ogImage = `${site.siteMetadata.siteUrl}${thumb.childImageSharp.fixed.src}`
+  const ogImage = site.siteMetadata.siteUrl + (image || defaultOpenGraphImage)
 
   return (
     <Helmet

@@ -2,6 +2,7 @@
 title: Consumindo API GraphQL em React.js com Apollo client
 date: 2020-09-01
 description: Tutorial montando uma aplicação frontend em React.js para consumir dados de uma API em GraphQL.
+ogimage: "fruits.jpg"
 ---
 
 ![fruits](fruits.jpg)

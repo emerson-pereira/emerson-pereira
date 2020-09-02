@@ -2,9 +2,10 @@
 title: var, let, const resumido
 date: 2020-05-18
 description: As diferenças de cada uma de forma resumida e pontuada.
+ogimage: "3-balloons.jpg"
 ---
 
-![three balloons](./3-balloons.jpg)
+![three balloons](3-balloons.jpg)
 
 ## Diferenças
 

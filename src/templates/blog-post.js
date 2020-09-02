@@ -9,6 +9,8 @@ import { rhythm, scale } from "../utils/typography"
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const { previous, next } = pageContext
+  const { ogimage } = post.frontmatter
+  const ogImagePath = ogimage && ogimage.childImageSharp.fixed.src
 
   const editURL = `https://github.com/emerson-pereira/emerson-pereira/edit/master/content/blog/${
     data.markdownRemark.fileAbsolutePath.split("/blog/")[1]
@@ -20,6 +22,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
         lang="pt-BR"
+        image={ogImagePath}
       />
       <p style={{ marginBottom: 40 }}>
         <Link to="/blog">← All posts</Link>
@@ -118,6 +121,13 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        ogimage {
+          childImageSharp {
+            fixed {
+              src
+            }
+          }
+        }
       }
     }
   }
