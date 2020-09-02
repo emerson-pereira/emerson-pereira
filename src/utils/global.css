@@ -1,0 +1,15 @@
+.gatsby-highlight-code-line {
+  background-color: #505050;
+  display: block;
+  margin-right: -1em;
+  margin-left: -1em;
+  padding-right: 1em;
+  padding-left: 0.75em;
+  border-left: 0.25em solid #75b5ff;
+}
+
+:not(pre) > code[class*="language-"] {
+  background: #525252 !important;
+  color: #f2f2f2;
+  padding: 0.1em 0.2em !important;
+}

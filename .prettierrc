@@ -1,4 +1,12 @@
 {
   "arrowParens": "avoid",
-  "semi": false
+  "semi": false,
+  "overrides": [
+    {
+      "files": ["content/blog/**/*.md"],
+      "options": {
+        "printWidth": 68
+      }
+    }
+  ]
 }
