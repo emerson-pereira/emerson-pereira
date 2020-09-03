@@ -49,12 +49,14 @@ console.log(x) // x is not defined
 
 Para escopar uma variável usando `var` pode-se usar [IIFE](http://benalman.com/news/2010/11/immediately-invoked-function-expression/) (_Immediately Invoked Function Expression_) já que `var` só pode ser escopada por função:
 
+<!-- prettier-ignore-start -->
 ```js
-;(function () {
+(function () {
   var x = 1
 })()
 console.log(x) // x is not defined
 ```
+<!-- prettier-ignore-end -->
 
 ## Temporal Dead Zone
 
