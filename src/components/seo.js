@@ -88,6 +88,14 @@ const SEO = ({ description, lang, meta, title, image }) => {
           content: ogImage,
         },
       ].concat(meta)}
+      link={[
+        {
+          rel: "alternate",
+          type: "application/rss+xml",
+          title: "Emerson Pereira's personal blog RSS Feed",
+          href: "./rss.xml",
+        },
+      ]}
     />
   )
 }
