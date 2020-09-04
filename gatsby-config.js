@@ -88,7 +88,7 @@ module.exports = {
                   .replace(/"\/static\//g, `"${siteUrl}/static/`)
                   .replace(/,\s*\/static\//g, `,${siteUrl}/static/`)
 
-                const footnote = `<div style="margin-top: 40px;"><p style="margin-top: 0; font-style: italic;">Originalmente publicado em <a href="${postUrl}">emersonpereira.me</a></p></div>`
+                const footnote = `<div style="margin-top: 40px;"><p style="margin-top: 0;"><em>Originalmente publicado em <a href="${postUrl}">emersonpereira.me</a></em></p></div>`
 
                 return Object.assign({}, edge.node.frontmatter, {
                   description:
