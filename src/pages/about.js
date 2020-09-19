@@ -102,7 +102,7 @@ const About = ({ location }) => {
 
       <ul>
         <li>I know how to juggle three balls</li>
-        <li>I know how to wheelie a bycicle</li>
+        <li>I know how to wheelie a bicycle</li>
         <li>My favorite show is The office</li>
         <li>I used to teach English for Kids</li>
       </ul>
