@@ -1,12 +1,12 @@
-import React from "react"
-import { Link, useStaticQuery } from "gatsby"
+import React, { FC } from "react"
+import { graphql, Link, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import { rhythm } from "../utils/typography"
 
-const About = ({ location }) => {
+const About: FC<{ location: any }> = ({ location }) => {
   const data = useStaticQuery(graphql`
     query {
       avatar: file(absolutePath: { regex: "/avatar.jpg/" }) {
@@ -20,7 +20,6 @@ const About = ({ location }) => {
         siteMetadata {
           author {
             name
-            summary
           }
         }
       }

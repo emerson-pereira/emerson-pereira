@@ -1,4 +1,4 @@
-import React from "react"
+import React, { FC } from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
@@ -6,7 +6,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
+interface props {
+  data: any
+  pageContext: any
+  location: any
+}
+
+const BlogPostTemplate: FC<props> = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const { previous, next } = pageContext
   const { ogimage } = post.frontmatter

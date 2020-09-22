@@ -1,4 +1,4 @@
-import React from "react"
+import React, { FC } from "react"
 import { graphql, Link } from "gatsby"
 
 import Bio from "../components/bio"
@@ -6,8 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
-const BlogIndex = ({ data, location }) => {
-  const posts = data.allMarkdownRemark.edges
+const BlogIndex: FC<{ data: any; location: any }> = ({ data, location }) => {
+  const posts: { node: any }[] = data.allMarkdownRemark.edges
 
   return (
     <Layout location={location} title="Blog">
