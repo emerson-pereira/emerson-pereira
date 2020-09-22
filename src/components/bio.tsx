@@ -37,6 +37,7 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
+        marginTop: rhythm(1.5),
         marginBottom: rhythm(2.5),
       }}
     >
@@ -54,9 +55,8 @@ const Bio = () => {
         }}
       />
       <p style={{ margin: 0 }}>
-        Escrito por <strong>{author.name}</strong>
-        <br />
-        {author.summary}
+        My personal blog.
+        <br />I write about web development stuff.
       </p>
     </div>
   )

@@ -23,7 +23,7 @@ const BlogPostTemplate: FC<props> = ({ data, pageContext, location }) => {
   }`
 
   return (
-    <Layout location={location} title="Blog">
+    <Layout location={location} title={data.site.siteMetadata.author.name}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
@@ -116,6 +116,9 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        author {
+          name
+        }
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {

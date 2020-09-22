@@ -1,5 +1,5 @@
 import React, { FC } from "react"
-import { graphql, Link, useStaticQuery } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Image from "gatsby-image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -28,11 +28,8 @@ const About: FC<{ location: any }> = ({ location }) => {
 
   const { author } = data.site.siteMetadata
   return (
-    <Layout location={location} title="About">
+    <Layout location={location} title={author.name}>
       <SEO title="About" />
-      <p style={{ marginBottom: 40 }}>
-        <Link to="/">← Home</Link>
-      </p>
 
       <div style={{ textAlign: `center`, margin: rhythm(1) }}>
         <Image

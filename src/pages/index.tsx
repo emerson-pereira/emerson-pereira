@@ -15,7 +15,9 @@ const Home: FC<{ location: any }> = ({ location }) => (
       <Link to="/about">About</Link>
     </p>
     <p>
-      <Link to="/blog">Blog</Link>
+      <Link to="/blog">
+        Blog <abbr title="brazilian portuguese">(pt-br)</abbr>
+      </Link>
     </p>
 
     <h2>Contact</h2>

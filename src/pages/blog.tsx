@@ -10,11 +10,8 @@ const BlogIndex: FC<{ data: any; location: any }> = ({ data, location }) => {
   const posts: { node: any }[] = data.allMarkdownRemark.edges
 
   return (
-    <Layout location={location} title="Blog">
+    <Layout location={location} title={data.site.siteMetadata.author.name}>
       <SEO title="Blog" lang="pt-BR" />
-      <p style={{ marginBottom: 40 }}>
-        <Link to="/">← Home</Link>
-      </p>
       <Bio />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
@@ -56,6 +53,9 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        author {
+          name
+        }
       }
     }
     allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
