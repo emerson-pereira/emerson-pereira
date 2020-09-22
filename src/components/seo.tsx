@@ -5,13 +5,24 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
+import React, { FC } from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import defaultOpenGraphImage from "../../content/assets/thumb.jpg"
 
-const SEO = ({ description, lang, meta, title, image }) => {
+interface props {
+  description?: string
+  lang?: string
+  meta?: any[]
+  title: string
+  image?: string
+}
+
+const SEO: FC<props> = ({ description, lang, meta, title, image }) => {
+  if (typeof meta === "undefined") {
+    meta = []
+  }
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -109,8 +120,9 @@ SEO.defaultProps = {
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
+  meta: PropTypes.array,
   title: PropTypes.string.isRequired,
+  image: PropTypes.string,
 }
 
 export default SEO
