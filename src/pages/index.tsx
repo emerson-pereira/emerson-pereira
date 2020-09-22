@@ -18,7 +18,7 @@ const Home: FC<{ location: any }> = ({ location }) => (
       <Link to="/blog">Blog</Link>
     </p>
 
-    <h4>Contact</h4>
+    <h2>Contact</h2>
 
     <p>
       <a href="mailto:emerson@emersonpereira.me">Email</a>
