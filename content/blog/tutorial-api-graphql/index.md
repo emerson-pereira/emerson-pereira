@@ -22,7 +22,7 @@ Links do projeto:
 
 - **Versão online da API**: [graphql-frutas.herokuapp.com](https://graphql-frutas.herokuapp.com/)
 
-- **Versão online App React**: [graphql-frutas.herokuapp.com](https://graphql-frutas.herokuapp.com/)
+- **Versão online App React**: [codesandbox.io/s/graphql-frutas-4isf8](https://codesandbox.io/s/graphql-frutas-4isf8)
 
 ## A proposta
 
@@ -476,7 +476,7 @@ Links do projeto:
 
 - **Versão online da API**: [graphql-frutas.herokuapp.com](https://graphql-frutas.herokuapp.com/)
 
-- **Versão online App React**: [graphql-frutas.herokuapp.com](https://graphql-frutas.herokuapp.com/)
+- **Versão online App React**: [codesandbox.io/s/graphql-frutas-4isf8](https://codesandbox.io/s/graphql-frutas-4isf8)
 
 ## Próximo passo
 
