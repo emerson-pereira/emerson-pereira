@@ -1,21 +1,13 @@
 ---
-title: "Conceitos avançados (porém simples) de JavaScript"
+title: "Hoisting em JavaScript"
 date: 2021-03-16
-description: Entenda alguns dos conceitos mais avançados da linguagem JavaScript e veja que não é nada tão complicado.
+description: Entenda o que é Hoisting em JavaScript e perceba como é um conceito avançado, bem simples.
 ogimage: "study.jpg"
 ---
 
-Esse pequeno texto tem o objetivo de expor alguns conceitos básicos, porém considerados avançados, em JavaScript. Espero que ao fim da leitura, consiga consolidar seus conhecimentos na linguagem e firmar sua expertise, ou quem sabe, estar super preparado para aquelas perguntas chave de entrevistas de emprego.
+Entenda o que é Hoisting em JavaScript e perceba como é um conceito avançado, bem simples.
 
-![men coding in computer](computer-code.jpg)
-
-Ao se aprofundar em temas mais profundos da linguagem JavaScript podemos nos assustar com terminologias e termos novos. Mas depois de entender melhor o que cada conceito é logo se perde o medo e percebemos que não era nada tão complexo como poderíamos ter imaginado.
-
-Vamos começar entendo o que é:
-
-### Hoisting
-
-![Helicopter lifting people](hoisting.jpg)
+![Hoist](hoist.jpg)
 
 Hoisting é um comportamento que acontece por de trás dos panos em JavaScript. Tem a ver com como o código que você escreveu é interpretado.
 
@@ -25,11 +17,11 @@ A palavra **hoist** em inglês, significa:
 - "levantar"
 - "elevar"
 - "subir"
-...
+- ...
 
 O que faz perfeito sentido pois:
 
-> Hoisting é o comportamento padrão do JavaScriptde mover as declarações para o topo. <br />
+> Hoisting é o comportamento padrão do JavaScript de mover as declarações para o topo. <br />
 — [W3School](https://www.w3schools.com/js/js_hoisting.asp)
 
 Resumidamente, JavaScript irá "escanear" o código e indentificar as variáveis nele declaradas, então iniciará todas as variáveis antes de rodar o código. <br />
@@ -59,7 +51,7 @@ Bom, mais ou menos.
 
 Sim, esse comportamento é associado ao uso de varíaveis declaradas com `var`.
 
-E para variáveis declaradas com `let` ou `const`, o **hoisting** ainda acontece, porém somente para inicializar as variáveis e **não se pode** usar as variáveis antes das linhas que foram declardas:
+E para variáveis declaradas com `let` ou `const`, o **hoisting** ainda acontece, porém somente para inicializar as variáveis e **não se pode** usar as variáveis antes das linhas que elas foram declaradas:
 
 ```js
 pizza = 'Marguerita';
@@ -75,6 +67,6 @@ console.log(pizza); // ReferenceError
 
 ### PS:
 
-"hoisting" não uma palavra esquisito só em inglês pois a tradução para português é **"Içamento"**.
+"hoisting" não uma palavra esquisita só em inglês pois a tradução para português é **"Içamento"**.
 
-"Içamento"? Ok...
+"Içamento"!
