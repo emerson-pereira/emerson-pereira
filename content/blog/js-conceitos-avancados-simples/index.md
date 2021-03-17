@@ -7,7 +7,7 @@ ogimage: "study.jpg"
 
 Entenda o que é Hoisting em JavaScript e perceba como é um conceito avançado, bem simples.
 
-![Hoist](hoist.jpg)
+![Hoist](crane.jpg)
 
 Hoisting é um comportamento que acontece por de trás dos panos em JavaScript. Tem a ver com como o código que você escreveu é interpretado.
 
