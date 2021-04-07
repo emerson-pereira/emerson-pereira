@@ -1,11 +1,11 @@
 ---
 title: Closures em JavaScript
 date: 2021-04-06
-description: Neste artigo explicarei de forma simplificada o que é closure em JavaScript
+description: Neste artigo explicarei de forma simplificada o que é closure em JavaScript.
 ogimage: "boxes.jpg"
 ---
 
-Neste artigo explicarei de forma simples um que é _closure_ em JavaScript
+Neste artigo explicarei de forma simples um que é _closure_ em JavaScript.
 
 ![Boxes](boxes.jpg)
 
