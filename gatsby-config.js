@@ -133,7 +133,7 @@ module.exports = {
         name: `Emerson Pereira - Web Developer`,
         short_name: `Emerson Pereira`,
         start_url: `/`,
-        background_color: `#333333`,
+        background_color: `radial-gradient(circle, rgba(51,8,108,1) 0%, rgba(152,77,92,1) 100%)`,
         theme_color: `#75B5FF`,
         display: `minimal-ui`,
         icon: `content/assets/icon.png`,
