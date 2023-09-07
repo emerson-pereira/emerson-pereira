@@ -23,10 +23,6 @@ const Home: FC<{ location: any }> = ({ location }) => (
     <h2>Contact</h2>
 
     <p>
-      <a href="mailto:emerson@emersonpereira.me">Email</a>
-    </p>
-
-    <p>
       <a
         target="_blank"
         rel="noreferrer"
