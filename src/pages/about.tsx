@@ -76,32 +76,16 @@ const About: FC<{ location: any }> = ({ location }) => {
         code-review, tests and continuous integration.
       </p>
 
-      <h4>Skills</h4>
-
-      <p>
-        I have experience with Node.js and API development (REST and GraphQL),
-        frontend frameworks, databases and Cloud.
-      </p>
-
-      <p>
-        I'm a JavaScript coder. I have learned a lot of it over the years and
-        continue to learn. I have been following up as the language evolves and,
-        also, getting more familiar with its foundational principles.
-      </p>
-
-      <p>
-        Right now, I'm learning about TypeScript, Next.js, Nest.js, Gatsby.js,
-        and other hot tech in the world of JavaScript and web development.
-      </p>
-
-      <h4>Fun facts</h4>
-
-      <ul>
-        <li>I know how to juggle three balls</li>
-        <li>I know how to wheelie a bicycle</li>
-        <li>My favorite show is The office</li>
-        <li>I used to teach English for Kids</li>
-      </ul>
+      
+    <p>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.linkedin.com/in/emerson-pereira-dev/"
+      >
+        LinkedIn
+      </a>
+    </p>
     </Layout>
   )
 }
