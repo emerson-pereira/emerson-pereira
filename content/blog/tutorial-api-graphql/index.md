@@ -11,7 +11,7 @@ Este artigo é um tutorial de como montar um servidor GraphQL e faz parte de uma
 
 Se quiser saber o que é GraphQL primeiro, veja o seguinte artigo:
 
-📝 [_GraphQL: O que é e como usar_](/blog/introducao-a-graphql)
+📝 [_GraphQL: O que é e como usar_](/introducao-a-graphql)
 
 Você pode acompanhar o tutorial passo-a-passo ou clonar o repositório completo do GitHub.<br />
 Além disso eu disponibilizei uma versão online (sem mutations para que não haja mudança nos dados online) a título de exemplo do resultado final da API.
@@ -482,4 +482,4 @@ Links do projeto:
 
 Agora podemos usar clientes para fazer chamadas para essa API. Veja o tutorial de como implementar uma App React.js com Apollo Client para conectar a essa API:
 
-📝 [_Consumindo API GraphQL em React.js com Apollo client_](/blog/tutorial-react-graphql/)
+📝 [_Consumindo API GraphQL em React.js com Apollo client_](/tutorial-react-graphql/)

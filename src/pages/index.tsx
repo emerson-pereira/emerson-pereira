@@ -1,47 +1,74 @@
 import React, { FC } from "react"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
+
+import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { rhythm } from "../utils/typography"
 
-const Home: FC<{ location: any }> = ({ location }) => (
-  <Layout location={location} title="Emerson Pereira">
-    <SEO title="" />
-    <p>
-      I work with web development since 2016, and I'm passionate about the web
-      and the technologies around it.
-    </p>
+const BlogIndex: FC<{ data: any; location: any }> = ({ data, location }) => {
+  const posts: { node: any }[] = data.allMarkdownRemark.edges
 
-    <p>
-      <Link to="/about">About</Link>
-    </p>
-    <p>
-      <Link to="/blog">
-        Blog <abbr title="brazilian portuguese">(pt-br)</abbr>
-      </Link>
-    </p>
+  return (
+    <Layout location={location} title={data.site.siteMetadata.author.name}>
+      <SEO title="Blog" lang="pt-BR" />
+      <Bio />
+      {posts.map(({ node }) => {
+        const title = node.frontmatter.title || node.fields.slug
+        return (
+          <article key={node.fields.slug}>
+            <header>
+              <h3
+                style={{
+                  marginBottom: rhythm(1 / 4),
+                }}
+              >
+                <Link style={{ boxShadow: `none` }} to={`${node.fields.slug}`}>
+                  {title}
+                </Link>
+              </h3>
+              <small>{node.frontmatter.date}</small>
+            </header>
+            <section>
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: node.frontmatter.description || node.excerpt,
+                }}
+              />
+            </section>
+          </article>
+        )
+      })}
+    </Layout>
+  )
+}
 
-    <h2>Contact</h2>
+export default BlogIndex
 
-    <p>
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href="https://github.com/emerson-pereira/"
-      >
-        GitHub
-      </a>
-    </p>
-
-    <p>
-      <a
-        target="_blank"
-        rel="noreferrer"
-        href="https://www.linkedin.com/in/emerson-pereira-dev/"
-      >
-        LinkedIn
-      </a>
-    </p>
-  </Layout>
-)
-
-export default Home
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+        author {
+          name
+        }
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+          }
+        }
+      }
+    }
+  }
+`

@@ -11,11 +11,11 @@ Essa é a segunda e última parte da série de como montar uma aplicação compl
 
 Para seguir com esse tutorial, é necessário noções de GraphQL, além de React.js. Para se familiarizar com GraphQL, veja o seguinte artigo:
 
-📝 [_GraphQL: O que é e como usar_](/blog/introducao-a-graphql)
+📝 [_GraphQL: O que é e como usar_](/introducao-a-graphql)
 
 Se quiser ver o primeiro tutorial de como montar uma API GraphQL, veja o seguinte artigo:
 
-📝 [_Montando API GraphQL em Node.js com Apollo e MongoDB_](/blog/tutorial-api-graphql/)
+📝 [_Montando API GraphQL em Node.js com Apollo e MongoDB_](/tutorial-api-graphql/)
 
 Você pode acompanhar o tutorial passo-a-passo ou clonar o repositório completo do GitHub.<br />
 Além disso eu disponibilizei uma versão online (sem mutations para que não haja mudança nos dados online) a título de exemplo do resultado final da API.

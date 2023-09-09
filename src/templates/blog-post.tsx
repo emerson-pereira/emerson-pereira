@@ -31,7 +31,7 @@ const BlogPostTemplate: FC<props> = ({ data, pageContext, location }) => {
         image={ogImagePath}
       />
       <p style={{ marginBottom: 40 }}>
-        <Link to="/blog">← All posts</Link>
+        <Link to="/">← All posts</Link>
       </p>
       <article>
         <header>
@@ -54,6 +54,13 @@ const BlogPostTemplate: FC<props> = ({ data, pageContext, location }) => {
           </p>
         </header>
         <section dangerouslySetInnerHTML={{ __html: post.html }} />
+
+        <hr
+          style={{
+            marginBottom: rhythm(1),
+          }}
+        />
+
         <div
           style={{
             background: `#4d4d4d`,
@@ -65,15 +72,11 @@ const BlogPostTemplate: FC<props> = ({ data, pageContext, location }) => {
           <p style={{ margin: 0 }}>
             Achou algum erro ou quer sugestionar uma mudança? <br />
             <a target="_blank" rel="noreferrer" href={editURL}>
-              Edite no GitHub
+              Edite esse post
             </a>
           </p>
         </div>
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
+
         <footer>
           <Bio />
         </footer>
@@ -91,20 +94,24 @@ const BlogPostTemplate: FC<props> = ({ data, pageContext, location }) => {
         >
           <li>
             {previous && (
-              <Link to={`/blog${previous.fields.slug}`} rel="prev">
-                ← {previous.frontmatter.title}
+              <Link to={`${previous.fields.slug}`} rel="prev">
+                {"‹"} {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={`/blog${next.fields.slug}`} rel="next">
-                {next.frontmatter.title} →
+              <Link to={`${next.fields.slug}`} rel="next">
+                {next.frontmatter.title} {"›"}
               </Link>
             )}
           </li>
         </ul>
       </nav>
+
+      <p style={{ marginTop: 40, marginBottom: 80 }}>
+        <Link to="/">← All posts</Link>
+      </p>
     </Layout>
   )
 }

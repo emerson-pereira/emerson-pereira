@@ -55,8 +55,15 @@ const Bio = () => {
         }}
       />
       <p style={{ margin: 0 }}>
-        My personal blog.
-        <br />I write about web development stuff.
+        Eu escrevo sobre desenvolvimento web, tecnologia, e outros devaneios.
+        <br />
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.linkedin.com/in/emerson-pereira-dev/"
+        >
+          LinkedIn
+        </a>
       </p>
     </div>
   )

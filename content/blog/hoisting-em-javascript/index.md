@@ -14,6 +14,7 @@ Hoisting é um comportamento que acontece por de trás dos panos em JavaScript. 
 Mais específicamente, trata-se da **ordem** que determinados pedaços do código são lidas.
 
 A palavra **hoist** em inglês, significa:
+
 - "levantar"
 - "elevar"
 - "subir" ...
@@ -21,7 +22,7 @@ A palavra **hoist** em inglês, significa:
 O que faz perfeito sentido pois:
 
 > Hoisting é o comportamento padrão do JavaScript de mover as declarações para o topo. <br />
-— [W3School](https://www.w3schools.com/js/js_hoisting.asp)
+> — [W3School](https://www.w3schools.com/js/js_hoisting.asp)
 
 Resumidamente, em tempo de execução (ao rodar o código), seja no navegador ou em um servidor em Node.js por exemplo, JavaScript irá "escanear" o código e indentificar as variáveis nele declaradas, então iniciará todas as variáveis antes de rodar o código.
 
@@ -29,13 +30,13 @@ Por isso entende-se que independente de onde foram declaradas as variáveis, ela
 
 Isso siginifica que qualquer variável declarada naquele escopo / função ira ficar disponível em qualquer parte do código, inclusive antes da linha que ela é declarada.
 
-Neste exemplo se pode ver que é possível atribuir um valor a variável `pizza` antes da linha que ela é declarada: 
+Neste exemplo se pode ver que é possível atribuir um valor a variável `pizza` antes da linha que ela é declarada:
 
 ```js
-pizza = 'Marguerita';
-var pizza;
+pizza = "Marguerita"
+var pizza
 
-console.log(pizza); // Marguerita
+console.log(pizza) // Marguerita
 ```
 
 ### Mentira! Nada é movido para o topo de nada 😑
@@ -59,10 +60,10 @@ E para variáveis declaradas com `let` ou `const`, apesar de o **hoisting** aind
 Neste exemplo se pode ver que ao tentar atribuir um valor a uma variável `let` antes de ela ser declarada, o código não funciona e retorna um `ReferenceError`:
 
 ```js
-pizza = 'Marguerita';
-let pizza;
+pizza = "Marguerita"
+let pizza
 
-console.log(pizza); // ReferenceError
+console.log(pizza) // ReferenceError
 ```
 
 ### Fun fact
@@ -75,4 +76,3 @@ console.log(pizza); // ReferenceError
 
 - https://www.w3schools.com/js/js_hoisting.asp
 - https://developer.mozilla.org/pt-BR/docs/Glossary/Hoisting
-

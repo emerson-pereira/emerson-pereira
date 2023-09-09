@@ -1,16 +1,6 @@
-### Hi there!
+### Blog do Emerson Pereira
 
-I'm Emerson Pereira and I'm a Web Developer.
-
-### 🙂 About Me
-
-I work with web development since 2016, and I'm passionate about the web and the technologies around it.
-
-If you want to know more about me, my personal website is [emersonpereira.me](https://emersonpereira.me/).
-
-### 📫 How to reach me
-
-To contact me, please write to emerson@emersonpereira.me.
+Eu escrevo sobre desenvolvimento web, tecnologia, e outros devaneios.
 
 <!--
 **emerson-pereira/emerson-pereira** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.

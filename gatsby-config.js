@@ -6,7 +6,7 @@ module.exports = {
       summary: `Web Developer`,
     },
     description: `Emerson Pereira personal website and blog.`,
-    siteUrl: `https://emersonpereira.me`,
+    siteUrl: `https://emersonpereira.tech`,
   },
   plugins: [
     {
@@ -79,7 +79,7 @@ module.exports = {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map(edge => {
                 const siteUrl = site.siteMetadata.siteUrl
-                const postUrl = `${siteUrl}/blog${edge.node.fields.slug}`
+                const postUrl = `${siteUrl}${edge.node.fields.slug}`
 
                 let html = edge.node.html
                 html = html
@@ -88,7 +88,7 @@ module.exports = {
                   .replace(/"\/static\//g, `"${siteUrl}/static/`)
                   .replace(/,\s*\/static\//g, `,${siteUrl}/static/`)
 
-                const footnote = `<div style="margin-top: 40px;"><p style="margin-top: 0;"><em>Originalmente publicado em <a href="${postUrl}">emersonpereira.me</a></em></p></div>`
+                const footnote = `<div style="margin-top: 40px;"><p style="margin-top: 0;"><em>Originalmente publicado em <a href="${postUrl}">emersonpereira.tech</a></em></p></div>`
 
                 return Object.assign({}, edge.node.frontmatter, {
                   description:
@@ -122,7 +122,7 @@ module.exports = {
             `,
             output: "/rss.xml",
             title: "Emerson Pereira's personal blog RSS Feed",
-            match: "^/blog/",
+            match: "^/",
           },
         ],
       },
@@ -133,7 +133,7 @@ module.exports = {
         name: `Emerson Pereira - Web Developer`,
         short_name: `Emerson Pereira`,
         start_url: `/`,
-        background_color: `radial-gradient(circle, rgba(51,8,108,1) 0%, rgba(152,77,92,1) 100%)`,
+        background_color: `#333`,
         theme_color: `#75B5FF`,
         display: `minimal-ui`,
         icon: `content/assets/icon.png`,
