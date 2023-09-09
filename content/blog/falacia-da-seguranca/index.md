@@ -35,7 +35,7 @@ Então, sem mais delongas, quero ir direto ao assunto e convidá-lo a responder 
 Antes da pergunta, uma introdução ao “Dont pad”:
 É uma ferramenta de site que permite a qualquer usuário escrever, editar e excluir páginas de texto com base em URL. Então, por exemplo, se você acessar dontpad.com/testing, pode haver ou não algumas notas lá. Alguém pode ter usado esse URL antes ou talvez você seja o primeiro. Não requer login ou autenticação, qualquer pessoa pode acessar qualquer URL (portanto, qualquer nota) a qualquer momento.
 
-Agora você sabe o que é “Não pad”. Aqui está minha pergunta para você:
+Agora você sabe o que é “Don't pad”. Aqui está minha pergunta para você:
 Em termos de privacidade, “Don’t pad” é mais ou menos seguro do que um site que usa login e armazena suas anotações e seus bancos de dados?
 
 _(Você pode pular a reflexão e olhar a resposta mais abaixo...)._
@@ -46,8 +46,8 @@ Por que? Bem, pelo seguinte motivo:
 
 O que é uma senha? Uma sequência de caracteres que só você conhece e que deve lembrar toda vez que quiser acessar sites com login, ou anotar em algum lugar, quem sabe até usar um gerenciador de senhas que permite fazer senhas bem fortes.
 
-Bem, o mesmo não se aplicaria a “Não preencha”, não é apenas uma questão de memorizar um URL em forma de senha e somente você teria acesso à nota por trás desse URL? Da mesma forma, só você tem acesso às notas em um site baseado em login porque fez o mesmo com suas credenciais?
-Além disso, e se eu dissesse que “Não pad” é ainda mais seguro do que fazer login? Porque com o login o site precisaria armazenar seu endereço de e-mail, que é uma informação pessoal. E com “Don’t pad” você não precisa fornecer nenhuma informação pessoal.
+Bem, o mesmo não se aplicaria a “Don't pad”, não é apenas uma questão de memorizar um URL em forma de senha e somente você teria acesso à nota por trás desse URL? Da mesma forma, só você tem acesso às notas em um site baseado em login porque fez o mesmo com suas credenciais?
+Além disso, e se eu dissesse que “Don't pad” é ainda mais seguro do que fazer login? Porque com o login o site precisaria armazenar seu endereço de e-mail, que é uma informação pessoal. E com “Don’t pad” você não precisa fornecer nenhuma informação pessoal.
 
 Argumentos muito bons, certo? E se isso faz sentido para você, bom, você poderia seguir com sua vida e, para você, essa seria a forma mais segura de escrever notas baseadas nesses argumentos.
 
@@ -55,7 +55,7 @@ Bem, é aí que mora o perigo, se alguém já lhe disse isso e você nunca mais 
 
 Mas na minha opinião esta conclusão pode ser perigosa porque se você começar a pesquisar mais sobre o assunto você perde essa convicção, e se você tomou uma decisão segura com base nisso, bem, pode acontecer que a decisão que você tomou não tenha sido tão baseada mais na verdade.
 
-Ao acessar a página da polícia de privacidade “Não pad”, você descobrirá que os endereços IP são rastreados:
+Ao acessar a página da polícia de privacidade “Don't pad”, você descobrirá que os endereços IP são rastreados:
 
 > “Coletamos (log) endereços IP e URLs de páginas acessadas de cada endereço IP para detectar e prevenir fraudes, proteger contra ataques ou cumprir obrigações legais.”
 > 03/07/2023 https://dontpad.com/privacy.html
@@ -76,7 +76,7 @@ Além disso, o URL também é compartilhado com o Google:
 
 Então, para concluir, acho que tudo isso foi apenas um grande reflexo de "O que neste momento consideramos ser uma verdade dada sobre algo?", e ter confiança nisso apenas para descobrir que poderíamos ter construído essa crença com base em uma análise superficial. Da mesma forma concluí que “Don’t pad” era melhor por não exigir e-mail, por exemplo.
 
-Acho que é necessário parar de investigar as coisas indefinidamente só porque o exagero pode resultar em inação. Da mesma forma que atrasei muito a redação da minha nota, apenas investigando as políticas de privacidade “Não preencha”.
+Acho que é necessário parar de investigar as coisas indefinidamente só porque o exagero pode resultar em inação. Da mesma forma que atrasei muito a redação da minha nota, apenas investigando as políticas de privacidade “Don't pad”.
 
 Mas, pelo menos, alguma investigação pode ajudá-lo a escapar de falácias, de verdades ditas pela metade, ou seja, a não ser enganado.
 
