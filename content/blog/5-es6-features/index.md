@@ -95,8 +95,6 @@ O que isso faz é permitir que usemos declarações da direita pra esquerda e at
 
 Pra isso basta declarar o `async` antes da sua função e `await` antes da chamada que se espera um retorno de uma Primise e pronto.
 
-Essas duas features são,de longe, as que eu mais gosto no ECMAScript 6 e espero que vocês tenham gostado também.
-
 [Leia mais sobre Fetch](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API)
 
 [Leia mais sobre Async / Await](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/funcoes_assincronas)
