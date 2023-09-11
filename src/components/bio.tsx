@@ -63,6 +63,14 @@ const Bio = () => {
           href="https://www.linkedin.com/in/emerson-pereira-dev/"
         >
           LinkedIn
+        </a>{" "}
+        |{" "}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/emerson-pereira/"
+        >
+          GitHub
         </a>
       </p>
     </div>

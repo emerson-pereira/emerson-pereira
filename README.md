@@ -1,6 +1,6 @@
 ### Blog do Emerson Pereira
 
-Eu escrevo sobre desenvolvimento web, tecnologia, e outros devaneios.
+Eu escrevo sobre desenvolvimento web, tecnologia, e outros devaneios em [emersonpereira.tech](https://emersonpereira.tech)
 
 <!--
 **emerson-pereira/emerson-pereira** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
