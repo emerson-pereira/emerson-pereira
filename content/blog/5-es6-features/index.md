@@ -5,9 +5,6 @@ description: Uma lista de 5 das minhas features favoritas do ECMAScript 6.
 ogimage: "unique-array.png"
 ---
 
-> Artigo publicado em:
-> [https://developer.ibm.com/br/technologies/api/articles/5-features-do-es6/](https://developer.ibm.com/br/technologies/api/articles/5-features-do-es6/)
-
 Isso é uma lista de 5 das minhas features favoritas do ECMAScript 6 (ou ES6).
 
 São pequenos "pedaços" de código que eu considero simples porém super incríveis e úteis.
