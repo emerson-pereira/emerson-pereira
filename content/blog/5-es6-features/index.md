@@ -102,4 +102,3 @@ Essas duas features são,de longe, as que eu mais gosto no ECMAScript 6 e espero
 [Leia mais sobre Async / Await](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/funcoes_assincronas)
 
 _Imagens criadas com [Carbon](https://carbon.now.sh)_
-

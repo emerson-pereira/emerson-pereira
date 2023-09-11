@@ -39,6 +39,9 @@ const BlogIndex: FC<{ data: any; location: any }> = ({ data, location }) => {
           </article>
         )
       })}
+      <Link style={{ boxShadow: `none` }} to="/rss.xml">
+        rss
+      </Link>
     </Layout>
   )
 }
