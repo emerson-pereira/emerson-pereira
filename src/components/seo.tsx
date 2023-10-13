@@ -23,22 +23,20 @@ const SEO: FC<props> = ({ description, lang, meta, title, image }) => {
   if (typeof meta === "undefined") {
     meta = []
   }
-  const { site } = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author {
-              summary
-            }
-            siteUrl
+  const { site } = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+          description
+          author {
+            summary
           }
+          siteUrl
         }
       }
-    `
-  )
+    }
+  `)
 
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = `${site.siteMetadata.title} - ${site.siteMetadata.author.summary}`

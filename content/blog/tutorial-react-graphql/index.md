@@ -94,7 +94,7 @@ Começando na pasta `public`, abra `index.html` e deixe dessa maneira:
 _Caminho_: `frontend/public/index.html`
 
 ```html
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="utf-8" />
@@ -245,7 +245,7 @@ ReactDOM.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>,
-  document.getElementById("root")
+  document.getElementById("root"),
 )
 ```
 
@@ -580,7 +580,7 @@ const CreateFruit = () => {
       onCompleted() {
         history.push(`/`)
       },
-    }
+    },
   )
 
   if (loading) return <p>Loading...</p>
@@ -786,7 +786,7 @@ const EditFruit = () => {
       onCompleted() {
         history.push(`/`)
       },
-    }
+    },
   )
 
   if (loading) return <p>Loading...</p>
@@ -916,7 +916,7 @@ const DeleteFruit = () => {
         const { fruits } = cache.readQuery({ query: GET_FRUITS })
 
         const deletedIndex = fruits.findIndex(
-          fruit => fruit.id === id
+          fruit => fruit.id === id,
         )
         const updatedCache = [
           ...fruits.slice(0, deletedIndex),
@@ -932,7 +932,7 @@ const DeleteFruit = () => {
       onCompleted() {
         history.push(`/`)
       },
-    }
+    },
   )
 
   if (loading) return <p>Loading...</p>
