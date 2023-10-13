@@ -4,6 +4,10 @@
   "description": "A starter for a blog powered by Gatsby and Markdown",
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "engines": {
+    "node": "<=16.20.2",
+    "npm": "<=8.19.4"
+  },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
