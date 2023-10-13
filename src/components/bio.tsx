@@ -6,7 +6,7 @@
  */
 
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
@@ -37,8 +37,8 @@ const Bio = () => {
     <div
       style={{
         display: `flex`,
-        marginTop: rhythm(1.5),
-        marginBottom: rhythm(2.5),
+        marginTop: rhythm(1),
+        marginBottom: rhythm(1),
       }}
     >
       <Image
@@ -57,21 +57,21 @@ const Bio = () => {
       <p style={{ margin: 0 }}>
         Eu escrevo sobre desenvolvimento web, tecnologia, e outros devaneios.
         <br />
-        <a
+        <Link
           target="_blank"
           rel="noreferrer"
-          href="https://www.linkedin.com/in/emerson-pereira-dev/"
+          to="https://www.linkedin.com/in/emerson-pereira-dev/"
         >
           LinkedIn
-        </a>{" "}
+        </Link>{" "}
         |{" "}
-        <a
+        <Link
           target="_blank"
           rel="noreferrer"
-          href="https://github.com/emerson-pereira/"
+          to="https://github.com/emerson-pereira/"
         >
           GitHub
-        </a>
+        </Link>{" "}
       </p>
     </div>
   )

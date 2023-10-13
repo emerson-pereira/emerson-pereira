@@ -31,7 +31,9 @@ const BlogPostTemplate: FC<props> = ({ data, pageContext, location }) => {
         image={ogImagePath}
       />
       <p style={{ marginBottom: 40 }}>
-        <Link to="/">← All posts</Link>
+        <Link style={{ boxShadow: `none` }} to="/">
+          ← All posts
+        </Link>
       </p>
       <article>
         <header>
@@ -61,23 +63,21 @@ const BlogPostTemplate: FC<props> = ({ data, pageContext, location }) => {
           }}
         />
 
-        <div
+        <p style={{ margin: 0 }}>
+          <a target="_blank" rel="noreferrer" href={editURL}>
+            Edite esse post
+          </a>
+        </p>
+
+        <footer
           style={{
-            background: `#4d4d4d`,
+            background: `rgba(255, 255, 255, 0.05)`,
             borderRadius: `10px`,
-            padding: rhythm(1),
+            padding: `1px 10px`,
+            marginTop: rhythm(1),
             marginBottom: rhythm(1),
           }}
         >
-          <p style={{ margin: 0 }}>
-            Achou algum erro ou quer sugestionar uma mudança? <br />
-            <a target="_blank" rel="noreferrer" href={editURL}>
-              Edite esse post
-            </a>
-          </p>
-        </div>
-
-        <footer>
           <Bio />
         </footer>
       </article>
@@ -88,20 +88,29 @@ const BlogPostTemplate: FC<props> = ({ data, pageContext, location }) => {
             display: `flex`,
             flexWrap: `wrap`,
             justifyContent: `space-between`,
+            columnGap: rhythm(1.5),
             listStyle: `none`,
             padding: 0,
           }}
         >
-          <li>
+          <li style={{ marginLeft: 0 }}>
             {previous && (
-              <Link to={`${previous.fields.slug}`} rel="prev">
+              <Link
+                style={{ boxShadow: `none` }}
+                to={`${previous.fields.slug}`}
+                rel="prev"
+              >
                 {"‹"} {previous.frontmatter.title}
               </Link>
             )}
           </li>
-          <li>
+          <li style={{ marginLeft: 0 }}>
             {next && (
-              <Link to={`${next.fields.slug}`} rel="next">
+              <Link
+                style={{ boxShadow: `none` }}
+                to={`${next.fields.slug}`}
+                rel="next"
+              >
                 {next.frontmatter.title} {"›"}
               </Link>
             )}
@@ -110,7 +119,9 @@ const BlogPostTemplate: FC<props> = ({ data, pageContext, location }) => {
       </nav>
 
       <p style={{ marginTop: 40, marginBottom: 80 }}>
-        <Link to="/">← All posts</Link>
+        <Link style={{ boxShadow: `none` }} to="/">
+          ← All posts
+        </Link>
       </p>
     </Layout>
   )
