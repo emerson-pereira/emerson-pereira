@@ -5,7 +5,7 @@ description: Penso que é essencial para qualquer pessoas a busca por conhecimen
 ogimage: "metro-lotado.jpg"
 ---
 
-Penso que é essencial para qualquer pessoas a busca por conhecimento, não somente técnico mas também histórico, filosófico, científico.
+Penso que é essencial para qualquer pessoa a busca por conhecimento, não somente técnico mas também histórico, filosófico, científico.
 
 [Sociologia pra entender o Brasil](https://icl.com.br/curso/sociologia/) é o nome do curso do Jessé Souza no [Instituto Conhecimento Liberta](https://icl.com.br/). Esse artigo é para registrar algumas das idéias que obtive a partir dessas aulas.
 
