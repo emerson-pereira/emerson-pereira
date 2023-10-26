@@ -1,16 +1,16 @@
 ---
 title: Conhecimento de história é tão importante quanto conhecimento técnico
-date: 2019-11-02
-description: Aqui, eu vou passar um pouco de como foi a conferência Web.br 2019 e os aprendizados que levei.
-ogimage: "taking-notes.jpg"
+date: 2023-10-26
+description: Penso que é essencial para qualquer pessoas a busca por conhecimento, não somente técnico mas também histórico, filosófico, científico.
+ogimage: "metro-lotado.jpg"
 ---
 
 Penso que é essencial para qualquer pessoas a busca por conhecimento, não somente técnico mas também histórico, filosófico, científico.
 
 [Sociologia pra entender o Brasil](https://icl.com.br/curso/sociologia/) é o nome do curso do Jessé Souza no [Instituto Conhecimento Liberta](https://icl.com.br/). Esse artigo é para registrar algumas das idéias que obtive a partir dessas aulas.
 
-![Metrô lotado](metro-lotado.jpg)
-[Metrô lotado](https://unsplash.com/photos/a-group-of-people-riding-on-a-subway-train-Iv3eg_W_DFY)
+![metrô lotado](metro-lotado.jpg)
+[metrô lotado](https://unsplash.com/photos/a-group-of-people-riding-on-a-subway-train-Iv3eg_W_DFY)
 
 A sede pelo conhecimento sempre me seduziu o que me levou a conhecer ferramentas novas e me tornar um engenheiro de software. Essa mesma chama me leva a buscar conhecimento sobre o mundo em que vivemos o que tem impacto direto na vida pois aprendi que só o conhecimento liberta e liberdade é um atributo essencial para qualquer ser-humano.
 Pra ser bom profissional precisa primeiro ser humano, empático e ter pensamento crítico. Não adiantará em nada ser um engenheiro excepcional em um mundo mediano e por isso busco não só aprimorar minhas habilidades tecnológicas como também as humanas por meio da história, filosofia e ciência.
