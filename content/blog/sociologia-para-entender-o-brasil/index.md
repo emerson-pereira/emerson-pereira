@@ -18,14 +18,14 @@ Esse curso com Jessé me ajudou em muito a perceber a minha história como um br
 
 
 Deixo aqui alguma das reflexões que obtive:
-- Max Weber terá grande influência nos intelectuais brasileiros que irão trazer, por interpretações questionáveis do autor, a idea hegemônica do que é o povo brasileiro, nos atribuindo caraterísticas tais como o "vira-latismo" que define o brasileiro como aquele de cultura inferior, que está sempre atrás de um "jeitinho", que é miserável porque é preguiçoso etc.
+- Max Weber terá grande influência nos intelectuais brasileiros que irão trazer, por interpretações questionáveis do autor, a ideia hegemônica do que é o povo brasileiro, nos atribuindo caraterísticas tais como o "vira-latismo" que define o brasileiro como aquele de cultura inferior, que está sempre atrás de um "jeitinho", que é miserável porque é preguiçoso etc.
 - O protestantismo ascético juntamente ao movimento liberal muda o paradigma de sucesso para a sociedade e faz crer que bem sucedido é aquele que produzir o máximo possível em detrimento do paradigma anterior onde a produção era apenas para sustentar as necessidades da família e conservar-se o tempo livre de vida
 - Gilberto Freyre detém esse estigma de raça subjugada nos pintando como um povo festivo, amigável e caloroso. Contrário da cultura americana com bairros separados dos italianos, chineses por exemplo.
-- Getúlio Vargas avança trazendo a idea de inclusão do povo brasileiro e cria uma imagem de brasilidade
+- Getúlio Vargas avança trazendo a ideia de inclusão do povo brasileiro e cria uma imagem de brasilidade
 - Em 1808 Portugal traz o aparato do estado que confere lei, impessoalidade jurídica, impulso capitalista, hábitos europeus em comida, vestimenta etc, classe média literária, economia competitiva, valorização dos conhecimentos, técnicos e profissionais
-- Sérgio Boarque cria a identidade de vira-lata nacional que molda a concepção de muitos brasileiros até hoje. Essa idea é detrimental para o povo e é usada pela elite econômica como forma de diminuir a alto-estima de um povo para que assim seja mais fácil convencê-lo que merece pouco.
+- Sérgio Boarque cria a identidade de vira-lata nacional que molda a concepção de muitos brasileiros até hoje. Essa ideia é detrimental para o povo e é usada pela elite econômica como forma de diminuir a alto-estima de um povo para que assim seja mais fácil convencê-lo que merece pouco.
 - A corrupção da classe política é existente desde de a roma antiga, até mesmo no Egito até chegar à nós brasileiros por herança ibérica mas mais detrimental que a corrupção dos políticos é a corrupção da elite econômica que saqueia a riqueza nacional para o benefício de uma minoria diminuta em nome da perda de garantia de humanidade nacional. A exemplo tivemos o que é considerado o maior rombo da história do mercado financeiro brasileiro recentemente com o [golpe das Lojas Americanas que trouxe prejuízo de dezenas de BILHÕES](https://g1.globo.com/economia/noticia/2023/01/20/de-r-20-bilhoes-para-r-43-bilhoes-entenda-a-divida-da-americanas.ghtml) aos brasileiros.
-- A atribuição do povo brasileiro como corrupto ajuda a estigmatizá-lo para o seu detrimento como se escândalos políticos fosse uma exclusividade brasileira e idealiza o USA e Europa como exemplos de honestidade, divino, perfeito.
+- A atribuição do povo brasileiro como corrupto ajuda a estigmatizá-lo para o seu detrimento como se escândalos políticos fosse uma exclusividade brasileira e ideializa o USA e Europa como exemplos de honestidade, divino, perfeito.
 - Classe média (20% dos brasileiros) se da pelo acúmulo de privilégios e não pela renda. O eventual aumento do poder de compra de classes não-privilegiadas não as confere as garantias existentes para a classe média de acesso a cultura, educação, saúde, respeito, direitos por herança. Essa estrutura de classe é um dos fatores que por onde se percebe o racismo de raça e racismo de classe.
 
 ## O mau trato aos menos privilegiados
@@ -35,10 +35,10 @@ Jessé menciona nesse curso a [história narrada por Brás Cubas de Machado de A
 ## Conclusão
 
 Para concluir, Jessé Souza ao trazer esse contexto histórico refuta a ideia do brasileiro como raça subjugada e vira-lata para trazer uma ideia de brasilidade mais humanista onde nos coloca como consequência dessas ideias hegemônicas criadas e suportadas por diferentes intelectuais ao longo de nossa história.
-Essa análise traz para nós brasileiros auto-estima e nos ajuda a livrar-nos dos idealismos criados que nos põem como inferiores.
+Essa análise traz para nós brasileiros auto-estima e nos ajuda a livrar-nos dos ideialismos criados que nos põem como inferiores.
 Traz a reflexão dos motivos de um país tão rico como o Brasil poder produzir pessoas tão miseráveis e nos dá uma visão de futuro para o caminho de um nação igualitária e humanista com uma brasilidade livre de estigmas e com valores poderosos que já temos mas nos são negados.
 
-Como brasileiro já naveguei por esses conflitos de classe, fiquei confuso, adquiri a tal do síndrome do vira-lata e pensei de mim mesmo de forma diminutiva devido as ideias que foram a mim expostas. Com essas ideas revolucionárias trazidas por Jessé de Souza eu consigo hoje perceber melhor como a nossa identidade nacional foi criada e isso certamente muda minha noção de brasileiro e brasilidade para algo muito mais positivo, humanista, não inferiorizante e de orgulho.
+Como brasileiro já naveguei por esses conflitos de classe, fiquei confuso, adquiri a tal do síndrome do vira-lata e pensei de mim mesmo de forma diminutiva devido as ideias que foram a mim expostas. Com essas ideias revolucionárias trazidas por Jessé de Souza eu consigo hoje perceber melhor como a nossa identidade nacional foi criada e isso certamente muda minha noção de brasileiro e brasilidade para algo muito mais positivo, humanista, não inferiorizante e de orgulho.
 
 Para além de conhecimentos técnicos busco o conhecimento humano, e esse curso foi um passo a mais na busca e isso já faz de mim um profissional e uma pessoa melhor.
 
