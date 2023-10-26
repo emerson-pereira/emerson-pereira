@@ -38,10 +38,10 @@ Para concluir, Jessé Souza ao trazer esse contexto histórico refuta a ideia do
 Essa análise traz para nós brasileiros auto-estima e nos ajuda a livrar-nos dos idealismos criados que nos põem como inferiores.
 Traz a reflexão dos motivos de um país tão rico como o Brasil poder produzir pessoas tão miseráveis e nos dá uma visão de futuro para o caminho de um nação igualitária e humanista com uma brasilidade livre de estigmas e com valores poderosos que já temos mas nos são negados.
 
-Como brasileiro já naveguei por esses conflitos de classe, fiquei confuso, adquiri a tal do síndrome do vira-lata e pensei de mim mesmo de forma diminutiva devido as ideias que foram a mim expostas. Com essas ideas revolucionárias trazidas por Jessé de Souza eu consigo hoje perceber melhor como a nossa identidade nacional foi criada e certamente muda minha noção de brasileiro e brasilidade para algo muito mais positivo, humanista, não inferiorizante e de orgulho.
+Como brasileiro já naveguei por esses conflitos de classe, fiquei confuso, adquiri a tal do síndrome do vira-lata e pensei de mim mesmo de forma diminutiva devido as ideias que foram a mim expostas. Com essas ideas revolucionárias trazidas por Jessé de Souza eu consigo hoje perceber melhor como a nossa identidade nacional foi criada e isso certamente muda minha noção de brasileiro e brasilidade para algo muito mais positivo, humanista, não inferiorizante e de orgulho.
 
-Para além de conhecimentos técnicos busco o conhecimento humano, e esse curso foi um passo a mais na busca e isso já faz de mim uma profissional e uma pessoa melhor.
+Para além de conhecimentos técnicos busco o conhecimento humano, e esse curso foi um passo a mais na busca e isso já faz de mim um profissional e uma pessoa melhor.
 
-PS: Esse post não tem patrocínio de nenhuma forma do [ICL](https://icl.com.br/), até porque é uma organização independente. Faço questão de colocá-los aqui pois acredito verdadeiramente nessa missão e aprendo muito dos cursos o programas.
+PS: Esse post não tem patrocínio de nenhuma forma do [ICL](https://icl.com.br/), até porque é uma organização independente. Faço questão de colocá-los aqui pois acredito verdadeiramente nessa missão e aprendo muito com cursos e programas de lá.
 
 Busque conhecimento 👽
