@@ -12,7 +12,7 @@ Penso que é essencial para qualquer pessoa a busca por conhecimento, não somen
 ![metrô lotado](metro-lotado.jpg)
 [metrô lotado](https://unsplash.com/photos/a-group-of-people-riding-on-a-subway-train-Iv3eg_W_DFY)
 
-A sede pelo conhecimento sempre me sedujziu o que me levou a conhecer ferramentas novas e me tornar um engenheiro de software. Essa mesma chama me leva a buscar conhecimento sobre o mundo em que vivemos o que tem impacto direto na vida pois aprendi que só o conhecimento liberta e liberdade é um atributo essencial para qualquer ser-humano.
+A sede pelo conhecimento sempre me seduziu o que me levou a conhecer ferramentas novas e me tornar um engenheiro de software. Essa mesma chama me leva a buscar conhecimento sobre o mundo em que vivemos o que tem impacto direto na vida pois aprendi que só o conhecimento liberta e liberdade é um atributo essencial para qualquer ser-humano.
 Pra ser bom profissional precisa primeiro ser humano, empático e ter pensamento crítico. Não adiantará em nada ser um engenheiro excepcional em um mundo mediano e por isso busco não só aprimorar minhas habilidades tecnológicas como também as humanas por meio da história, filosofia e ciência.
 Esse curso com Jessé me ajudou em muito a perceber a minha história como um brasileiro pintando um quadro de como as relações são postas historicamente até hoje e me permitiu criar noções de como a sociedade é dividida e se relaciona no Brasil.
 
