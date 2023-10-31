@@ -12,7 +12,7 @@ Nesse artigo vou falar sobre a influência do setor privado nas construções p�
 É a prática de tornar privado, ou seja, pertencer a uma pessoa ou grupo de donos algo que pertence ao público. É tão simples assim.
 
 ![Terra privada - proibida entrada do público](terra-privada.jpg)
-[Terra privada - proibida entrada ao público](https://unsplash.com/photos/blue-and-white-wooden-signage-on-green-grass-field-during-daytime-mWtYBG3HdXU)
+<small>[Terra privada - proibida entrada ao público](https://unsplash.com/photos/blue-and-white-wooden-signage-on-green-grass-field-during-daytime-mWtYBG3HdXU)</small>
 
 ## O perigo
 
@@ -40,7 +40,7 @@ Esses mecanismos de concentração de recurso para o setor privado em detrimento
 ## A internet
 
 ![Planeta conectado](planeta-conectado.jpg)
-[Planeta conectado](https://unsplash.com/photos/photo-of-outer-space-Q1p7bh3SHj8)
+<small>[Planeta conectado](https://unsplash.com/photos/photo-of-outer-space-Q1p7bh3SHj8)</small>
 
 No contexto da internet já hoje podemos perceber algumas formas de privatização do bem público de formas sofisticadas. A própria internet em si é o resultado de um esforço militar, ou seja, o esforço bancado pela verba pública. Nesse sentido a internet por ser criada com verba pública deveria ser um espaço também público para a defesa dos direitos democráticos, mas não é o que acontece. Muitas vezes a internet é vista como algo fora do estado acaba fugindo até mesmo das regulamentações por apresentar coisas novas que há não legislação específica ainda. A exemplo a [lei geral de proteção de dados](https://www.mpf.mp.br/servicos/lgpd/o-que-e-a-lgpd) foi ratificada somente em 2018 no Brasil e antes disso organizações privadas usavam dados pessoais do público sem freios ou regulamentação o que corrobora para o acúmulo de recursos a grupos privados enquanto sacrifica conquistas públicas como é a privacidade.
 
@@ -59,7 +59,7 @@ Mais uma vez o poder desenvolvido pela comunidade ao longo de muito tempo usado 
 ## Servidores: o coração da internet
 
 ![Servidores](servidores.jpg)
-[Servidores](https://www.pexels.com/photo/black-server-racks-on-a-room-325229/)
+<small>[Servidores](https://www.pexels.com/photo/black-server-racks-on-a-room-325229/)</small>
 
 A internet inteira funciona praticamente a base de servidores. Por exemplo, se você tem um site precisa de um servidor para hospedá-lo se não ninguém consegue acessar. Quando faz um pagamento online, uma pesquisa, uma consulta, dá um like, isso tudo engatilha uma ação que precisa ser processada por algum servidor. Hoje a maioria dos servidores existentes ao redor do mundo são feitos com alguma distribuição do sistema linux que é construído com esforço da comunidade open source.
 
