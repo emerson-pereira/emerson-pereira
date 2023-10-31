@@ -23,7 +23,7 @@ const BlogIndex: FC<{ data: any; location: any }> = ({ data, location }) => {
         }}
         to="/rss.xml"
       >
-        rss
+        <small>rss</small>
       </Link>
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
