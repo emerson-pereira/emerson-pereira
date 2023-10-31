@@ -39,7 +39,7 @@ Esses mecanismos de concentração de recurso para o setor privado em detrimento
 
 ## A internet
 
-![Planeta conectado](world-connected.jpg)
+![Planeta conectado](planeta-conectado.jpg)
 [Planeta conectado](https://unsplash.com/photos/photo-of-outer-space-Q1p7bh3SHj8)
 
 No contexto da internet já hoje podemos perceber algumas formas de privatização do bem público de formas sofisticadas. A própria internet em si é o resultado de um esforço militar, ou seja, o esforço bancado pela verba pública. Nesse sentido a internet por ser criada com verba pública deveria ser um espaço também público para a defesa dos direitos democráticos, mas não é o que acontece. Muitas vezes a internet é vista como algo fora do estado acaba fugindo até mesmo das regulamentações por apresentar coisas novas que há não legislação específica ainda. A exemplo a [lei geral de proteção de dados](https://www.mpf.mp.br/servicos/lgpd/o-que-e-a-lgpd) foi ratificada somente em 2018 no Brasil e antes disso organizações privadas usavam dados pessoais do público sem freios ou regulamentação o que corrobora para o acúmulo de recursos a grupos privados enquanto sacrifica conquistas públicas como é a privacidade.
