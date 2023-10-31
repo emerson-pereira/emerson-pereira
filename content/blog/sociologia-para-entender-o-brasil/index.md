@@ -16,8 +16,8 @@ A sede pelo conhecimento sempre me sedujziu o que me levou a conhecer ferramenta
 Pra ser bom profissional precisa primeiro ser humano, empático e ter pensamento crítico. Não adiantará em nada ser um engenheiro excepcional em um mundo mediano e por isso busco não só aprimorar minhas habilidades tecnológicas como também as humanas por meio da história, filosofia e ciência.
 Esse curso com Jessé me ajudou em muito a perceber a minha história como um brasileiro pintando um quadro de como as relações são postas historicamente até hoje e me permitiu criar noções de como a sociedade é dividida e se relaciona no Brasil.
 
-
 Deixo aqui alguma das reflexões que obtive:
+
 - Max Weber terá grande influência nos intelectuais brasileiros que irão trazer, por interpretações questionáveis do autor, a ideia hegemônica do que é o povo brasileiro, nos atribuindo caraterísticas tais como o "vira-latismo" que define o brasileiro como aquele de cultura inferior, que está sempre atrás de um "jeitinho", que é miserável porque é preguiçoso etc.
 - O protestantismo ascético juntamente ao movimento liberal muda o paradigma de sucesso para a sociedade e faz crer que bem sucedido é aquele que produzir o máximo possível em detrimento do paradigma anterior onde a produção era apenas para sustentar as necessidades da família e conservar-se o tempo livre de vida
 - Gilberto Freyre detém esse estigma de raça subjugada nos pintando como um povo festivo, amigável e caloroso. Contrário da cultura americana com bairros separados dos italianos, chineses por exemplo.
