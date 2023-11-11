@@ -1,11 +1,11 @@
 ---
 title: Princípios SOLID
 date: 2023-11-10
-description: Princípios SOLID resumido em JavaScript
+description: Os 5 princípios SOLID com alguns exemplos em JavaScript.
 ogimage: "jsolid.png"
 ---
 
-SOLID principles, let me show you where the concept has been popping up in the past few months…
+Os 5 princípios SOLID com alguns exemplos em JavaScript.
 
 ![metrô lotado](jsolid.png)
 
@@ -17,10 +17,10 @@ _**S**: Single Responsability Principle_
 
 Entidades devem ter apenas uma responsabilidade.
 
-### 🚌💥
+🚌💥 Excesso de responsabilidade:
+
 ```js
 function dirigirOnibusECobrarPassagem() {
-    // Excesso de responsabilidade
     // Atropelar pedestre
     // Passar troco errado
 }
@@ -56,7 +56,7 @@ class Motorista {
 }
 ```
 
-🚛 🔥🚌🔥 Fechado:
+🚛 🔥🚌🔥 Fechado para modificações:
 
 ```js
 class Motorista() {
@@ -66,7 +66,7 @@ class Motorista() {
 }
 ```
 
-🚌 🚛 Aberto:
+🚌 🚛 Aberto para extensões:
 
 ```js
 class Motorista() {
@@ -113,7 +113,7 @@ class MotoristaDeCaminhao extends Motorista {
 
 `Cobrador` não é substituível pela classe base `Motorista` pois o cobrador não poderia dirigir e o motorista não poderia cobrar.
 
-`MotoristaDeCaminhao` é substituível pela classe base `Motorista` pois o motorista de caminhão poderia dirigir e o motorista poderia estacionar:
+`MotoristaDeCaminhao` é substituível pela classe base `Motorista` pois o motorista de caminhão poderia dirigir e o motorista poderia estacionar.
 
 ## Princípio de segregação de interface
 
@@ -121,16 +121,127 @@ _**I**: Interface Segregation Principle_
 
 > Dividir para conquistar.
 
-Classes não devem ser forçadas a dependeper de métodos que não usam.
+Classes não devem ser forçadas a depender de métodos que não usam.
+
+
+🤔 Forçou a barra:
+
+```ts
+interface Funcionario {
+    dirigirOnibus: () => {},
+    cobrarPassagem: () => {}
+}
+
+class Motorista implements Funcionario {
+    dirigirOnibus() {
+        // dirigir ônibus
+    }
+    cobrarPassagem() {
+        throw new Error('Motorista não cobra passagem.');
+    }
+}
+
+class Cobrador implements Funcionario {
+    dirigirOnibus() {
+        throw new Error('Cobrador não dirige.');
+    }
+    cobrarPassagem() {
+        // Cobrar passagem
+    }
+}
+```
+
+🤗 Quem divide multiplica:
+
+```ts
+interface Funcionario { }
+
+interface FuncionarioMotorista extends Funcionario {
+    dirigirOnibus: () => {}
+}
+
+interface FuncionarioCobrador extends Funcionario {
+    cobrarPassagem: () => {}
+}
+
+class Motorista implements FuncionarioMotorista {
+    dirigirOnibus() {
+        // dirigir ônibus
+    }
+}
+
+class Cobrador implements FuncionarioCobrador {
+    cobrarPassagem() {
+        // Cobrar passagem
+    }
+}
+```
 
 ## Princípio de inversão de dependência
 
 _**D**: Dependency Inversion Principle_
 
-> Não tenho rabo preso com ninguém.
+> Sem rabo preso com ninguém.
 
 Módulos de alto nível não devem depender de módulos de baixo nível. Ambos devem depender da abstração.
 
 Abstrações não devem depender de detalhes. Os detalhes devem depender das abstrações.
+
+🔒 Rabo preso com MySQL:
+
+```js
+class ConectarBancoDeDados {
+    conexao;
+
+    constructor() {
+        this.conexao = new MySQLConnection();
+    }
+}
+
+const bancoDeDados = new ConectarBancoDeDados();
+// bancoDeDados.conexao
+```
+
+✌️ Rabo preso com ninguém:
+
+```ts
+interface IConexaoBancoDeDados {
+    conectar: () => {}
+}
+
+class ConexaoMySQL implements IConexaoBancoDeDados {
+    conectar() {
+        return new MySQLConnection();
+    }
+}
+
+class ConexaoOracle implements IConexaoBancoDeDados {
+    conectar() {
+        return new OracleConnection();
+    }
+}
+
+class ConectarBancoDeDados {
+    conexao: IConexaoBancoDeDados;
+
+    constructor(conexaoBancoDeDados: IConexaoBancoDeDados) {
+        this.conexao = conexaoBancoDeDados;
+    }
+}
+
+// MySQL
+const conexaoMySQL = new ConexaoMySQL();
+const bancoDeDados = new ConectarBancoDeDados(
+    conexaoMySQL.conectar()
+);
+// bancoDeDados.conexao
+
+// Oracle
+const conexaoOracle = new ConexaoOracle();
+const bancoDeDados = new ConectarBancoDeDados(
+    conexaoOracle.conectar()
+);
+// bancoDeDados.conexao
+```
 
 <!-- <div style="width: 240px"></div> -->
