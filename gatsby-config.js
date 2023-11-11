@@ -5,7 +5,7 @@ module.exports = {
       name: `Emerson Pereira`,
       summary: `Web Developer`,
     },
-    description: `Emerson Pereira personal website and blog.`,
+    description: `Blog do Emerson Pereira.`,
     siteUrl: `https://emersonpereira.tech`,
   },
   plugins: [
