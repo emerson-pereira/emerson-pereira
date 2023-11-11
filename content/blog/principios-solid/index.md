@@ -5,7 +5,7 @@ description: Os 5 princípios SOLID com alguns exemplos em JavaScript.
 ogimage: "jsolid.png"
 ---
 
-Os 5 princípios SOLID com alguns exemplos em JavaScript.
+Os 5 princípios SOLID com exemplos em JavaScript.
 
 ![metrô lotado](jsolid.png)
 
