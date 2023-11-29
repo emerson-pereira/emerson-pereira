@@ -31,6 +31,9 @@ Doelger.overrideThemeStyles = ({ rhythm }: { rhythm: Function }) => ({
     background: "rgba(0 0 0 / .9)",
     color: textColor,
   },
+  "header a": {
+    textDecoration: 'none',
+  },
   "h1, h2, h3": {
     fontFamily: `${["Playfair Display", "Times News Roman", "Serif"].join(",")} !important`,
     color: textColor,
