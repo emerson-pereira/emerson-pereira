@@ -1,2 +1,2 @@
-declare module "typography-theme-doelger"
+declare module "typography-theme-kirkham"
 declare module "*.jpg"
