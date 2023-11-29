@@ -32,7 +32,7 @@ const BlogPostTemplate: FC<props> = ({ data, pageContext, location }) => {
       />
       <p style={{ marginBottom: 40 }}>
         <Link style={{ boxShadow: `none` }} to="/">
-          ← All posts
+          ← Voltar
         </Link>
       </p>
       <article>
@@ -59,13 +59,13 @@ const BlogPostTemplate: FC<props> = ({ data, pageContext, location }) => {
 
         <hr
           style={{
-            marginBottom: rhythm(1),
+            margin: `${rhythm(2)} 0 ${rhythm(1)}`,
           }}
         />
 
-        <p style={{ margin: 0 }}>
+        <p style={{ marginBottom: rhythm(1) }}>
           <a target="_blank" rel="noreferrer" href={editURL}>
-            Edite esse post
+            Editar
           </a>
         </p>
 
@@ -120,7 +120,7 @@ const BlogPostTemplate: FC<props> = ({ data, pageContext, location }) => {
 
       <p style={{ marginTop: 40, marginBottom: 80 }}>
         <Link style={{ boxShadow: `none` }} to="/">
-          ← All posts
+          ← Voltar
         </Link>
       </p>
     </Layout>

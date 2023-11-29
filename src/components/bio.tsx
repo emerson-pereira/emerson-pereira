@@ -64,7 +64,7 @@ const Bio = () => {
         >
           LinkedIn
         </Link>{" "}
-        |{" "}
+        •{" "}
         <Link
           target="_blank"
           rel="noreferrer"

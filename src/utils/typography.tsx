@@ -1,25 +1,39 @@
 import "./global.css"
 
 import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
+import Doelger from "typography-theme-doelger"
 
-Wordpress2016.overrideThemeStyles = ({ rhythm }: { rhythm: Function }) => ({
-  "a.gatsby-resp-image-link": {
-    boxShadow: `none`,
-  },
-  body: {
-    background: `#333333`,
-    color: `#F2F2F2`,
-  },
-  "h1, h2, h3": {
-    fontFamily: `${["Merriweather", "Georgia", "serif"].join(",")} !important`,
-  },
+const primaryColor =
+  "hsl(" +
+  360 * Math.random() +
+  "," +
+  (25 + 70 * Math.random()) +
+  "%," +
+  (85 + 10 * Math.random()) +
+  "%)"
+const textColor = "rgba(255 255 255 / 0.8)"
+
+Doelger.overrideThemeStyles = ({ rhythm }: { rhythm: Function }) => ({
   a: {
-    color: `#75B5FF`,
+    textShadow: "none",
+    color: primaryColor,
+    backgroundImage: "none",
   },
   "a:hover": {
     transition: `1s filter linear`,
     filter: `brightness(85%)`,
+  },
+  p: {
+    color: textColor,
+  },
+  body: {
+    background: "rgba(0 0 0 / .9)",
+    color: textColor,
+  },
+  "h1, h2, h3": {
+    fontFamily: `${["Arvo", "Monospace", "serif"].join(",")} !important`,
+    color: textColor,
+    border: 0,
   },
   "ul, ol": {
     marginLeft: 0,
@@ -29,29 +43,27 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }: { rhythm: Function }) => ({
   },
   blockquote: {
     color: `inherit`,
-    borderLeftColor: `inherit`,
+    borderLeftColor: primaryColor,
     opacity: `0.8`,
     fontSize: `1.1rem`,
   },
   pre: {
-    border: `1px solid #666666`,
+    border: `1px solid ${primaryColor}`,
     borderRadius: `.3em`,
     marginBottom: `${rhythm(1)} !important`,
   },
   hr: {
-    background: "#666666",
+    background: "rgba(255 255 255 / 0.25)",
   },
   "td, th": {
-    borderColor: `#666666`,
+    borderColor: primaryColor,
   },
   strong: {
     fontWeight: 800,
   },
 })
 
-delete Wordpress2016.googleFonts
-
-const typography = new Typography(Wordpress2016)
+const typography = new Typography(Doelger)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {
