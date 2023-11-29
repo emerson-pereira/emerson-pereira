@@ -2,12 +2,9 @@
 title: Princípios SOLID
 date: 2023-11-10
 description: Os 5 princípios SOLID com alguns exemplos em JavaScript.
-ogimage: "jsolid.png"
 ---
 
 Os 5 princípios SOLID com exemplos em JavaScript.
-
-![metrô lotado](jsolid.png)
 
 ## Princípio da responsabilidade única
 
@@ -21,8 +18,8 @@ Entidades devem ter apenas uma responsabilidade.
 
 ```js
 function dirigirOnibusECobrarPassagem() {
-    // Atropelar pedestre
-    // Passar troco errado
+  // Atropelar pedestre
+  // Passar troco errado
 }
 ```
 
@@ -30,11 +27,11 @@ function dirigirOnibusECobrarPassagem() {
 
 ```js
 function dirigirOnibus() {
-    // Dirigir com atenção
+  // Dirigir com atenção
 }
 
 function cobrarPassagem() {
-    // Cobrar com calma
+  // Cobrar com calma
 }
 ```
 
@@ -50,9 +47,9 @@ Entidades devem estar abertas para extensões mas fechadas para modificações.
 
 ```js
 class Motorista {
-    dirigirOnibus() {
-        // dirigir ônibus 
-    }
+  dirigirOnibus() {
+    // dirigir ônibus
+  }
 }
 ```
 
@@ -91,7 +88,7 @@ Classe base:
 
 ```js
 class Motorista {
-    dirigir() {}
+  dirigir() {}
 }
 ```
 
@@ -99,7 +96,7 @@ class Motorista {
 
 ```js
 class Cobrador extends Motorista {
-    cobrar() {}
+  cobrar() {}
 }
 ```
 
@@ -107,7 +104,7 @@ class Cobrador extends Motorista {
 
 ```js
 class MotoristaDeCaminhao extends Motorista {
-    estacionar() {}
+  estacionar() {}
 }
 ```
 
@@ -123,57 +120,56 @@ _**I**: Interface Segregation Principle_
 
 Classes não devem ser forçadas a depender de métodos que não usam.
 
-
 🤔 Forçou a barra:
 
 ```ts
 interface Funcionario {
-    dirigirOnibus: () => {},
-    cobrarPassagem: () => {}
+  dirigirOnibus: () => {}
+  cobrarPassagem: () => {}
 }
 
 class Motorista implements Funcionario {
-    dirigirOnibus() {
-        // dirigir ônibus
-    }
-    cobrarPassagem() {
-        throw new Error('Motorista não cobra passagem.');
-    }
+  dirigirOnibus() {
+    // dirigir ônibus
+  }
+  cobrarPassagem() {
+    throw new Error("Motorista não cobra passagem.")
+  }
 }
 
 class Cobrador implements Funcionario {
-    dirigirOnibus() {
-        throw new Error('Cobrador não dirige.');
-    }
-    cobrarPassagem() {
-        // Cobrar passagem
-    }
+  dirigirOnibus() {
+    throw new Error("Cobrador não dirige.")
+  }
+  cobrarPassagem() {
+    // Cobrar passagem
+  }
 }
 ```
 
 🤗 Quem divide multiplica:
 
 ```ts
-interface Funcionario { }
+interface Funcionario {}
 
 interface FuncionarioMotorista extends Funcionario {
-    dirigirOnibus: () => {}
+  dirigirOnibus: () => {}
 }
 
 interface FuncionarioCobrador extends Funcionario {
-    cobrarPassagem: () => {}
+  cobrarPassagem: () => {}
 }
 
 class Motorista implements FuncionarioMotorista {
-    dirigirOnibus() {
-        // dirigir ônibus
-    }
+  dirigirOnibus() {
+    // dirigir ônibus
+  }
 }
 
 class Cobrador implements FuncionarioCobrador {
-    cobrarPassagem() {
-        // Cobrar passagem
-    }
+  cobrarPassagem() {
+    // Cobrar passagem
+  }
 }
 ```
 
@@ -191,14 +187,14 @@ Abstrações não devem depender de detalhes. Os detalhes devem depender das abs
 
 ```js
 class ConectarBancoDeDados {
-    conexao;
+  conexao
 
-    constructor() {
-        this.conexao = new MySQLConnection();
-    }
+  constructor() {
+    this.conexao = new MySQLConnection()
+  }
 }
 
-const bancoDeDados = new ConectarBancoDeDados();
+const bancoDeDados = new ConectarBancoDeDados()
 // bancoDeDados.conexao
 ```
 
@@ -206,42 +202,40 @@ const bancoDeDados = new ConectarBancoDeDados();
 
 ```ts
 interface IConexaoBancoDeDados {
-    conectar: () => {}
+  conectar: () => {}
 }
 
 class ConexaoMySQL implements IConexaoBancoDeDados {
-    conectar() {
-        return new MySQLConnection();
-    }
+  conectar() {
+    return new MySQLConnection()
+  }
 }
 
 class ConexaoOracle implements IConexaoBancoDeDados {
-    conectar() {
-        return new OracleConnection();
-    }
+  conectar() {
+    return new OracleConnection()
+  }
 }
 
 class ConectarBancoDeDados {
-    conexao: IConexaoBancoDeDados;
+  conexao: IConexaoBancoDeDados
 
-    constructor(conexaoBancoDeDados: IConexaoBancoDeDados) {
-        this.conexao = conexaoBancoDeDados;
-    }
+  constructor(conexaoBancoDeDados: IConexaoBancoDeDados) {
+    this.conexao = conexaoBancoDeDados
+  }
 }
 
 // MySQL
-const conexaoMySQL = new ConexaoMySQL();
+const conexaoMySQL = new ConexaoMySQL()
 const bancoDeDados = new ConectarBancoDeDados(
-    conexaoMySQL.conectar()
-);
+  conexaoMySQL.conectar(),
+)
 // bancoDeDados.conexao
 
 // Oracle
-const conexaoOracle = new ConexaoOracle();
+const conexaoOracle = new ConexaoOracle()
 const bancoDeDados = new ConectarBancoDeDados(
-    conexaoOracle.conectar()
-);
+  conexaoOracle.conectar(),
+)
 // bancoDeDados.conexao
 ```
-
-<!-- <div style="width: 240px"></div> -->
