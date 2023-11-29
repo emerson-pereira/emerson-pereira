@@ -13,7 +13,7 @@ const BlogIndex: FC<{ data: any; location: any }> = ({ data, location }) => {
     <Layout location={location} title={data.site.siteMetadata.author.name}>
       <SEO title="Blog" lang="pt-BR" />
       <Bio />
-      <Link
+      {/* <Link
         style={{
           boxShadow: `none`,
           margin: 0,
@@ -24,7 +24,7 @@ const BlogIndex: FC<{ data: any; location: any }> = ({ data, location }) => {
         to="/rss.xml"
       >
         <small>rss</small>
-      </Link>
+      </Link> */}
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug
         return (

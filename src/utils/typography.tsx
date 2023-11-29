@@ -1,43 +1,25 @@
 import "./global.css"
 
 import Typography from "typography"
-import Doelger from "typography-theme-kirkham"
+import Wordpress2016 from "typography-theme-wordpress-2016"
 
-const primaryColor =
-  "hsl(" +
-  360 * Math.random() +
-  "," +
-  (25 + 70 * Math.random()) +
-  "%," +
-  (85 + 10 * Math.random()) +
-  "%)"
-const textColor = "rgba(255 255 255 / 0.8)"
-
-Doelger.overrideThemeStyles = ({ rhythm }: { rhythm: Function }) => ({
+Wordpress2016.overrideThemeStyles = ({ rhythm }: { rhythm: Function }) => ({
+  "a.gatsby-resp-image-link": {
+    boxShadow: `none`,
+  },
+  body: {
+    background: `radial-gradient(circle, rgba(51,8,108,1) 0%, rgba(122,65,78,1) 100%)`,
+    color: `#F2F2F2`,
+  },
+  "h1, h2, h3": {
+    fontFamily: `${["Merriweather", "Georgia", "serif"].join(",")} !important`,
+  },
   a: {
-    textShadow: "none",
-    color: primaryColor,
-    backgroundImage: "none",
+    color: `#99ccff`,
   },
   "a:hover": {
     transition: `1s filter linear`,
     filter: `brightness(85%)`,
-  },
-  "li, p": {
-    fontFamily: `${["Georgia", "Monaco", "Andale Mono", "Ubuntu Mono", "monospace"].join(",")} !important`,
-    color: textColor
-  },
-  body: {
-    background: "rgba(0 0 0 / .9)",
-    color: textColor,
-  },
-  "header a": {
-    textDecoration: 'none',
-  },
-  "h1, h2, h3": {
-    fontFamily: `${["Playfair Display", "Times News Roman", "Serif"].join(",")} !important`,
-    color: textColor,
-    border: 0,
   },
   "ul, ol": {
     marginLeft: 0,
@@ -47,27 +29,29 @@ Doelger.overrideThemeStyles = ({ rhythm }: { rhythm: Function }) => ({
   },
   blockquote: {
     color: `inherit`,
-    borderLeftColor: primaryColor,
+    borderLeftColor: `inherit`,
     opacity: `0.8`,
     fontSize: `1.1rem`,
   },
   pre: {
-    border: `1px solid ${primaryColor}`,
+    border: `1px solid #666666`,
     borderRadius: `.3em`,
     marginBottom: `${rhythm(1)} !important`,
   },
   hr: {
-    background: "rgba(255 255 255 / 0.25)",
+    background: `rgba(255 255 255 / 0.33)`,
   },
   "td, th": {
-    borderColor: primaryColor,
+    borderColor: `#666666`,
   },
   strong: {
     fontWeight: 800,
   },
 })
 
-const typography = new Typography(Doelger)
+delete Wordpress2016.googleFonts
+
+const typography = new Typography(Wordpress2016)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {

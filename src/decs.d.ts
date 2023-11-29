@@ -1,2 +1,2 @@
-declare module "typography-theme-kirkham"
+declare module "typography-theme-wordpress-2016"
 declare module "*.jpg"
