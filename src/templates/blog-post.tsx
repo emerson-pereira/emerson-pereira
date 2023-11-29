@@ -1,7 +1,6 @@
 import React, { FC } from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
@@ -12,9 +11,8 @@ interface props {
   location: any
 }
 
-const BlogPostTemplate: FC<props> = ({ data, pageContext, location }) => {
+const BlogPostTemplate: FC<props> = ({ data, location }) => {
   const post = data.markdownRemark
-  const { previous, next } = pageContext
   const { ogimage } = post.frontmatter
   const ogImagePath = ogimage && ogimage.childImageSharp.fixed.src
 
@@ -59,68 +57,28 @@ const BlogPostTemplate: FC<props> = ({ data, pageContext, location }) => {
 
         <hr
           style={{
-            margin: `${rhythm(2)} 0 ${rhythm(1)}`,
+            marginTop: rhythm(2),
+            marginBottom: rhythm(2),
           }}
         />
 
-        <p style={{ marginBottom: rhythm(1) }}>
-          <a target="_blank" rel="noreferrer" href={editURL}>
-            Editar
-          </a>
-        </p>
-
         <footer
           style={{
-            background: `rgba(255, 255, 255, 0.05)`,
-            borderRadius: `10px`,
-            padding: `1px 10px`,
             marginTop: rhythm(1),
             marginBottom: rhythm(1),
           }}
         >
-          <Bio />
+          <p style={{ marginBottom: rhythm(1) }}>
+            <Link target="_blank" rel="noreferrer" to={editURL}>
+              Editar no GitHub
+            </Link>
+          </p>
         </footer>
       </article>
 
-      <nav>
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            columnGap: rhythm(1.5),
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li style={{ marginLeft: 0 }}>
-            {previous && (
-              <Link
-                style={{ boxShadow: `none` }}
-                to={`${previous.fields.slug}`}
-                rel="prev"
-              >
-                {"‹"} {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li style={{ marginLeft: 0 }}>
-            {next && (
-              <Link
-                style={{ boxShadow: `none` }}
-                to={`${next.fields.slug}`}
-                rel="next"
-              >
-                {next.frontmatter.title} {"›"}
-              </Link>
-            )}
-          </li>
-        </ul>
-      </nav>
-
-      <p style={{ marginTop: 40, marginBottom: 80 }}>
+      <p style={{ marginTop: rhythm(2), marginBottom: rhythm(2) }}>
         <Link style={{ boxShadow: `none` }} to="/">
-          ← Voltar
+          Emerson Pereira
         </Link>
       </p>
     </Layout>
