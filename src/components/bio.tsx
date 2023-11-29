@@ -55,7 +55,7 @@ const Bio = () => {
         }}
       />
       <p style={{ margin: 0 }}>
-        Eu escrevo sobre desenvolvimento web, tecnologia, e outros devaneios.
+        Artigos sobre desenvolvimento web.
         <br />
         <Link
           target="_blank"
