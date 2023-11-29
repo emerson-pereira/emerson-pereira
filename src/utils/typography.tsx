@@ -1,7 +1,7 @@
 import "./global.css"
 
 import Typography from "typography"
-import Doelger from "typography-theme-doelger"
+import Doelger from "typography-theme-kirkham"
 
 const primaryColor =
   "hsl(" +
@@ -23,15 +23,16 @@ Doelger.overrideThemeStyles = ({ rhythm }: { rhythm: Function }) => ({
     transition: `1s filter linear`,
     filter: `brightness(85%)`,
   },
-  p: {
-    color: textColor,
+  "li, p": {
+    fontFamily: `${["Georgia", "Monaco", "Andale Mono", "Ubuntu Mono", "monospace"].join(",")} !important`,
+    color: textColor
   },
   body: {
     background: "rgba(0 0 0 / .9)",
     color: textColor,
   },
   "h1, h2, h3": {
-    fontFamily: `${["Arvo", "Monospace", "serif"].join(",")} !important`,
+    fontFamily: `${["Playfair Display", "Times News Roman", "Serif"].join(",")} !important`,
     color: textColor,
     border: 0,
   },
