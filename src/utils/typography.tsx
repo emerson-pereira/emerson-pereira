@@ -8,7 +8,7 @@ Wordpress2016.overrideThemeStyles = ({ rhythm }: { rhythm: Function }) => ({
     boxShadow: `none`,
   },
   body: {
-    background: `radial-gradient(circle, rgba(51,8,108,1) 0%, rgba(122,65,78,1) 100%)`,
+    background: `radial-gradient(circle, rgba(51,8,108,1) 0%, rgba(8,20,39,1) 100%)`,
     color: `#F2F2F2`,
   },
   "h1, h2, h3": {
