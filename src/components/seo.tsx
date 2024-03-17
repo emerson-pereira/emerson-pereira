@@ -9,7 +9,6 @@ import React, { FC } from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
-import defaultOpenGraphImage from "../../content/assets/avatar.png"
 
 interface props {
   description?: string
@@ -41,7 +40,6 @@ const SEO: FC<props> = ({ description, lang, meta, title, image }) => {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = `${site.siteMetadata.title} - ${site.siteMetadata.author.summary}`
   const ogTitle = title ? `${title} - ${site.siteMetadata.title}` : defaultTitle
-  const ogImage = site.siteMetadata.siteUrl + (image || defaultOpenGraphImage)
 
   return (
     <Helmet
@@ -73,10 +71,6 @@ const SEO: FC<props> = ({ description, lang, meta, title, image }) => {
           content: site.siteMetadata.siteUrl,
         },
         {
-          property: `og:image`,
-          content: ogImage,
-        },
-        {
           name: `twitter:card`,
           content: `summary`,
         },
@@ -91,10 +85,6 @@ const SEO: FC<props> = ({ description, lang, meta, title, image }) => {
         {
           name: `twitter:description`,
           content: metaDescription,
-        },
-        {
-          name: `twitter:image`,
-          content: ogImage,
         },
       ].concat(meta)}
       link={[
