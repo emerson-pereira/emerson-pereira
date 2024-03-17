@@ -14,11 +14,6 @@ import { rhythm } from "../utils/typography"
 const Bio = () => {
   const data = useStaticQuery(graphql`
     query BioQuery {
-      avatar: file(absolutePath: { regex: "/avatar.png/" }) {
-        childImageSharp {
-          gatsbyImageData(width: 50, height: 50, layout: FULL_WIDTH)
-        }
-      }
       site {
         siteMetadata {
           author {
@@ -39,19 +34,6 @@ const Bio = () => {
         marginBottom: rhythm(1),
       }}
     >
-      <GatsbyImage
-        image={data.avatar.childImageSharp.gatsbyImageData}
-        alt={author.name}
-        style={{
-          marginRight: rhythm(1 / 2),
-          marginBottom: 0,
-          minWidth: 50,
-          borderRadius: `100%`,
-        }}
-        imgStyle={{
-          borderRadius: `50%`,
-        }}
-      />
       <p style={{ margin: 0 }}>
         Artigos sobre desenvolvimento web.
         <br />
